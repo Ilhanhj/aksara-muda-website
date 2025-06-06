@@ -3,5 +3,8 @@
 /* Preline UI */
 @import "../node_modules/preline/variants.css";
 
-/* Plugins */
-/* @plugin "@tailwindcss/forms"; */
+@theme {
+  --color-navy: #11395d;
+  --color-sand: #e4b07a;
+  --color-cream: #f4eae0;
+}

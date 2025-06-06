@@ -7,105 +7,298 @@
     <link href="src/output.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Navbar -->
-    <!-- ========== HEADER ========== -->
-    <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-7">
-        <nav
-            class="relative max-w-7xl w-full flex flex-wrap lg:grid lg:grid-cols-12 basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
-            <div class="lg:col-span-3 flex items-center">
-                <!-- Logo -->
-                <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
-                    href="../templates/creative-agency/index.html" aria-label="Preline">
-                    <svg class="w-28 h-auto" width="116" height="32" viewBox="0 0 116 32" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M33.5696 30.8182V11.3182H37.4474V13.7003H37.6229C37.7952 13.3187 38.0445 12.9309 38.3707 12.5369C38.7031 12.1368 39.134 11.8045 39.6634 11.5398C40.1989 11.2689 40.8636 11.1335 41.6577 11.1335C42.6918 11.1335 43.6458 11.4044 44.5199 11.946C45.3939 12.4815 46.0926 13.291 46.6158 14.3743C47.139 15.4515 47.4006 16.8026 47.4006 18.4276C47.4006 20.0095 47.1451 21.3452 46.6342 22.4347C46.1295 23.518 45.4401 24.3397 44.5661 24.8999C43.6982 25.4538 42.7256 25.7308 41.6484 25.7308C40.8852 25.7308 40.2358 25.6046 39.7003 25.3523C39.1709 25.0999 38.737 24.7829 38.3984 24.4013C38.0599 24.0135 37.8014 23.6226 37.6229 23.2287H37.5028V30.8182H33.5696ZM37.4197 18.4091C37.4197 19.2524 37.5367 19.9879 37.7706 20.6158C38.0045 21.2436 38.343 21.733 38.7862 22.0838C39.2294 22.4285 39.768 22.6009 40.402 22.6009C41.0421 22.6009 41.5838 22.4254 42.027 22.0746C42.4702 21.7176 42.8056 21.2251 43.0334 20.5973C43.2673 19.9633 43.3842 19.2339 43.3842 18.4091C43.3842 17.5904 43.2704 16.8703 43.0426 16.2486C42.8149 15.6269 42.4794 15.1406 42.0362 14.7898C41.593 14.4389 41.0483 14.2635 40.402 14.2635C39.7618 14.2635 39.2202 14.4328 38.777 14.7713C38.34 15.1098 38.0045 15.59 37.7706 16.2116C37.5367 16.8333 37.4197 17.5658 37.4197 18.4091ZM49.2427 25.5V11.3182H53.0559V13.7926H53.2037C53.4622 12.9124 53.8961 12.2476 54.5055 11.7983C55.1149 11.3428 55.8166 11.1151 56.6106 11.1151C56.8076 11.1151 57.02 11.1274 57.2477 11.152C57.4754 11.1766 57.6755 11.2105 57.8478 11.2536V14.7436C57.6632 14.6882 57.4077 14.639 57.0815 14.5959C56.7553 14.5528 56.4567 14.5312 56.1859 14.5312C55.6073 14.5312 55.0903 14.6574 54.6348 14.9098C54.1854 15.156 53.8284 15.5007 53.5638 15.9439C53.3052 16.3871 53.176 16.898 53.176 17.4766V25.5H49.2427ZM64.9043 25.777C63.4455 25.777 62.1898 25.4815 61.1373 24.8906C60.0909 24.2936 59.2845 23.4503 58.7182 22.3608C58.1519 21.2652 57.8688 19.9695 57.8688 18.4737C57.8688 17.0149 58.1519 15.7346 58.7182 14.6328C59.2845 13.531 60.0816 12.6723 61.1096 12.0568C62.1437 11.4413 63.3563 11.1335 64.7474 11.1335C65.683 11.1335 66.5539 11.2843 67.3603 11.5859C68.1728 11.8814 68.8806 12.3277 69.4839 12.9247C70.0932 13.5218 70.5672 14.2727 70.9057 15.1776C71.2443 16.0762 71.4135 17.1288 71.4135 18.3352V19.4155H59.4384V16.978H67.7111C67.7111 16.4117 67.588 15.91 67.3418 15.473C67.0956 15.036 66.754 14.6944 66.317 14.4482C65.8861 14.1958 65.3844 14.0696 64.812 14.0696C64.2149 14.0696 63.6856 14.2081 63.2239 14.4851C62.7684 14.7559 62.4114 15.1222 62.1529 15.5838C61.8944 16.0393 61.762 16.5471 61.7559 17.1072V19.4247C61.7559 20.1264 61.8851 20.7327 62.1437 21.2436C62.4083 21.7545 62.7807 22.1484 63.2608 22.4254C63.741 22.7024 64.3103 22.8409 64.9689 22.8409C65.406 22.8409 65.8061 22.7794 66.1692 22.6562C66.5324 22.5331 66.8432 22.3485 67.1018 22.1023C67.3603 21.8561 67.5572 21.5545 67.6927 21.1974L71.3304 21.4375C71.1458 22.3116 70.7672 23.0748 70.1948 23.7273C69.6285 24.3736 68.896 24.8783 67.9974 25.2415C67.1048 25.5985 66.0738 25.777 64.9043 25.777ZM77.1335 6.59091V25.5H73.2003V6.59091H77.1335ZM79.5043 25.5V11.3182H83.4375V25.5H79.5043ZM81.4801 9.49006C80.8954 9.49006 80.3937 9.29616 79.9752 8.90838C79.5628 8.51444 79.3566 8.04356 79.3566 7.49574C79.3566 6.95407 79.5628 6.48935 79.9752 6.10156C80.3937 5.70762 80.8954 5.51065 81.4801 5.51065C82.0649 5.51065 82.5635 5.70762 82.9759 6.10156C83.3944 6.48935 83.6037 6.95407 83.6037 7.49574C83.6037 8.04356 83.3944 8.51444 82.9759 8.90838C82.5635 9.29616 82.0649 9.49006 81.4801 9.49006ZM89.7415 17.3011V25.5H85.8083V11.3182H89.5569V13.8203H89.723C90.037 12.9955 90.5632 12.343 91.3019 11.8629C92.0405 11.3767 92.9361 11.1335 93.9887 11.1335C94.9735 11.1335 95.8322 11.349 96.5647 11.7798C97.2971 12.2107 97.8665 12.8262 98.2728 13.6264C98.679 14.4205 98.8821 15.3684 98.8821 16.4702V25.5H94.9489V17.1719C94.9551 16.304 94.7335 15.6269 94.2841 15.1406C93.8348 14.6482 93.2162 14.402 92.4283 14.402C91.8989 14.402 91.4311 14.5159 91.0249 14.7436C90.6248 14.9714 90.3109 15.3037 90.0831 15.7408C89.8615 16.1716 89.7477 16.6918 89.7415 17.3011ZM107.665 25.777C106.206 25.777 104.951 25.4815 103.898 24.8906C102.852 24.2936 102.045 23.4503 101.479 22.3608C100.913 21.2652 100.63 19.9695 100.63 18.4737C100.63 17.0149 100.913 15.7346 101.479 14.6328C102.045 13.531 102.842 12.6723 103.87 12.0568C104.905 11.4413 106.117 11.1335 107.508 11.1335C108.444 11.1335 109.315 11.2843 110.121 11.5859C110.934 11.8814 111.641 12.3277 112.245 12.9247C112.854 13.5218 113.328 14.2727 113.667 15.1776C114.005 16.0762 114.174 17.1288 114.174 18.3352V19.4155H102.199V16.978H110.472C110.472 16.4117 110.349 15.91 110.103 15.473C109.856 15.036 109.515 14.6944 109.078 14.4482C108.647 14.1958 108.145 14.0696 107.573 14.0696C106.976 14.0696 106.446 14.2081 105.985 14.4851C105.529 14.7559 105.172 15.1222 104.914 15.5838C104.655 16.0393 104.523 16.5471 104.517 17.1072V19.4247C104.517 20.1264 104.646 20.7327 104.905 21.2436C105.169 21.7545 105.542 22.1484 106.022 22.4254C106.502 22.7024 107.071 22.8409 107.73 22.8409C108.167 22.8409 108.567 22.7794 108.93 22.6562C109.293 22.5331 109.604 22.3485 109.863 22.1023C110.121 21.8561 110.318 21.5545 110.454 21.1974L114.091 21.4375C113.907 22.3116 113.528 23.0748 112.956 23.7273C112.389 24.3736 111.657 24.8783 110.758 25.2415C109.866 25.5985 108.835 25.777 107.665 25.777Z"
-                            class="fill-black dark:fill-white" fill="currentColor" />
-                        <path
-                            d="M1 29.5V16.5C1 9.87258 6.37258 4.5 13 4.5C19.6274 4.5 25 9.87258 25 16.5C25 23.1274 19.6274 28.5 13 28.5H12"
-                            class="stroke-black dark:stroke-white" stroke="currentColor" stroke-width="2" />
-                        <path
-                            d="M5 29.5V16.66C5 12.1534 8.58172 8.5 13 8.5C17.4183 8.5 21 12.1534 21 16.66C21 21.1666 17.4183 24.82 13 24.82H12"
-                            class="stroke-black dark:stroke-white" stroke="currentColor" stroke-width="2" />
-                        <circle cx="13" cy="16.5214" r="5" class="fill-black dark:fill-white" fill="currentColor" />
-                    </svg>
-                </a>
-                <!-- End Logo -->
+<body class="bg-cream font-[poppins]">
+    <!-- // start hero section -->
+    <section id="hero">
+        <!-- ========== HEADER ========== -->
+        <header class="z-50 flex flex-wrap w-full lg:justify-start lg:flex-nowrap py-3 bg-navy ">
+            <nav
+                class="relative flex flex-wrap items-center w-full px-4 mx-auto max-w-7xl lg:grid lg:grid-cols-12 basis-full md:px-6 lg:px-2 ">
+                <div class="flex items-center lg:col-span-3">
+                    <!-- Logo -->
+                    <a class="flex-none inline-block text-xl font-bold rounded-md text-sand "
+                        href="../templates/creative-agency/index.html" aria-label="Preline">
+                        AKSARA MUDA
+                    </a>
+                    <!-- End Logo -->
 
-                <div class="ms-1 sm:ms-2">
 
                 </div>
-            </div>
 
-            <!-- Button Group -->
-            <div class="flex items-center gap-x-1 lg:gap-x-2 ms-auto py-1 lg:ps-6 lg:order-3 lg:col-span-3">
-                <button type="button"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-white/10 dark:text-black dark:hover:text-white dark:focus:text-white">
-                    Sign in
-                </button>
-                <button type="button"
-                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl border border-transparent bg-lime-400 text-black hover:bg-lime-500 focus:outline-hidden focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none">
-                    Hire us
-                </button>
+                <!-- Button Group -->
+                <div class="flex items-center py-1 gap-x-1 lg:gap-x-2 ms-auto lg:ps-6 lg:order-3 lg:col-span-3">
+                    <a href="#kontak" class="">
+                        <button type="button"
+                            class="inline-flex items-center px-4 py-3 text-sm font-medium text-white border border-transparent rounded-lg cursor-pointer gap-x-2 bg-sand hover:opacity-75 focus:outline-hidden focus:opacity-75 disabled:opacity-50 disabled:pointer-events-none">
+                            Kontak
+                        </button>
 
-                <div class="lg:hidden">
-                    <button type="button"
-                        class="hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-black dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-                        id="hs-navbar-hcail-collapse" aria-expanded="false" aria-controls="hs-navbar-hcail"
-                        aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-hcail">
-                        <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="3" x2="21" y1="6" y2="6" />
-                            <line x1="3" x2="21" y1="12" y2="12" />
-                            <line x1="3" x2="21" y1="18" y2="18" />
-                        </svg>
-                        <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 6 6 18" />
-                            <path d="m6 6 12 12" />
-                        </svg>
-                    </button>
+                    </a>
+
+                    <div class="lg:hidden">
+                        <button type="button"
+                            class="hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-md border text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-black dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                            id="hs-navbar-hcail-collapse" aria-expanded="false" aria-controls="hs-navbar-hcail"
+                            aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-hcail">
+                            <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="3" x2="21" y1="6" y2="6" />
+                                <line x1="3" x2="21" y1="12" y2="12" />
+                                <line x1="3" x2="21" y1="18" y2="18" />
+                            </svg>
+                            <svg class="hidden hs-collapse-open:block shrink-0 size-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- End Button Group -->
+
+                <!-- Collapse -->
+                <div id="hs-navbar-hcail"
+                    class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-6"
+                    aria-labelledby="hs-navbar-hcail-collapse">
+                    <div
+                        class="flex flex-col mt-5 gap-y-4 gap-x-0 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
+                        <div>
+                            <a class="relative inline-block text-cream hover:text-sand before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-z-400 dark:text-cream"
+                                href="#tentang" aria-current="page">Tentang</a>
+                        </div>
+                        <div>
+                            <a class="inline-block text-cream hover:text-sand dark:text-cream "
+                                href="#program">Program</a>
+                        </div>
+                        <div>
+                            <a class="inline-block text-cream hover:text-sand dark:text-cream "
+                                href="#galeri">Galeri</a>
+                        </div>
+                        <div>
+                            <a class="inline-block text-cream hover:text-sand dark:text-cream " href="#">Tim</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Collapse -->
+            </nav>
+        </header>
+        <!-- ========== END HEADER ========== -->
+
+        <section class="flex items-start justify-center w-full bg-center bg-no-repeat bg-cover">
+            <div
+                class="flex flex-col items-center justify-start max-w-screen-xl gap-6 px-3 py-20 m-auto grow md:gap-12 sm:px-8 lg:px-16 xl:px-32">
+                <svg width="128" height="132" viewBox="0 0 128 132" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="size-32">
+                    <g filter="url(#filter0_dd_3487_18637)">
+                        <path
+                            d="M6.21166 50.2316C2.78106 37.4284 10.379 24.2683 23.1822 20.8377L77.7682 6.21139C90.5714 2.78079 103.731 10.3788 107.162 23.1819L121.788 77.7679C125.219 90.5711 117.621 103.731 104.818 107.162L50.2318 121.788C37.4286 125.219 24.2685 117.621 20.8379 104.818L6.21166 50.2316Z"
+                            fill="url(#paint0_linear_3487_18637)"></path>
+                    </g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M79.3211 12.0069L24.7351 26.6332C15.1327 29.2062 9.43426 39.0762 12.0072 48.6786L26.6335 103.265C29.2064 112.867 39.0765 118.565 48.6789 115.993L103.265 101.366C112.867 98.7933 118.566 88.9232 115.993 79.3208L101.367 24.7349C98.7936 15.1325 88.9235 9.43399 79.3211 12.0069ZM23.1822 20.8377C10.379 24.2683 2.78106 37.4284 6.21166 50.2316L20.8379 104.818C24.2685 117.621 37.4286 125.219 50.2318 121.788L104.818 107.162C117.621 103.731 125.219 90.5711 121.788 77.7679L107.162 23.1819C103.731 10.3788 90.5714 2.78079 77.7682 6.21139L23.1822 20.8377Z"
+                        fill="white"></path>
+                    <g filter="url(#filter1_dd_3487_18637)">
+                        <path
+                            d="M75.4895 33.922L79.1948 47.7503L62.5168 52.2191L79.2288 65.2224L64.2187 69.2444L69.5391 89.1003L56.1968 92.6754L50.8764 72.8194L64.2187 69.2444L46.5061 56.5092L42.8008 42.6809L75.4895 33.922Z"
+                            fill="white"></path>
+                    </g>
+                    <defs>
+                        <filter id="filter0_dd_3487_18637" x="0.387939" y="4.3877" width="127.224" height="127.224"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feMorphology radius="1" operator="erode" in="SourceAlpha"
+                                result="effect1_dropShadow_3487_18637"></feMorphology>
+                            <feOffset dy="4"></feOffset>
+                            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0">
+                            </feColorMatrix>
+                            <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_3487_18637">
+                            </feBlend>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feMorphology radius="2" operator="erode" in="SourceAlpha"
+                                result="effect2_dropShadow_3487_18637"></feMorphology>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                            <feComposite in2="hardAlpha" operator="out"></feComposite>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="effect1_dropShadow_3487_18637"
+                                result="effect2_dropShadow_3487_18637"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_3487_18637"
+                                result="shape"></feBlend>
+                        </filter>
+                        <filter id="filter1_dd_3487_18637" x="37.8008" y="32.922" width="46.428" height="68.7534"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feMorphology radius="1" operator="erode" in="SourceAlpha"
+                                result="effect1_dropShadow_3487_18637"></feMorphology>
+                            <feOffset dy="4"></feOffset>
+                            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0">
+                            </feColorMatrix>
+                            <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_3487_18637">
+                            </feBlend>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feMorphology radius="2" operator="erode" in="SourceAlpha"
+                                result="effect2_dropShadow_3487_18637"></feMorphology>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                            <feComposite in2="hardAlpha" operator="out"></feComposite>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="effect1_dropShadow_3487_18637"
+                                result="effect2_dropShadow_3487_18637"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_3487_18637"
+                                result="shape"></feBlend>
+                        </filter>
+                        <linearGradient id="paint0_linear_3487_18637" x1="96.0511" y1="100.032" x2="72.1628"
+                            y2="14.9302" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2050D9"></stop>
+                            <stop offset="1" stop-color="#6FA1F3"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="flex flex-col items-center flex-1 gap-6 text-center">
+                    <span
+                        class="inline-flex px-3 py-1 text-sm font-semibold text-center transition-all duration-300 ease-in-out border rounded-full h-7 border-navy bg-sand text-cream">1
+                        - 30 JUNI 2025</span>
+                    <div class="flex flex-col max-w-lg gap-6">
+                        <h3 class="text-4xl font-semibold text-slate-950 md:text-6xl">Here is your new Tailwind UI kit!
+                        </h3>
+                        <p class="text-lg font-normal leading-7 text-slate-400">We've done it carefully and simply.
+                            The
+                            elements work well together to create stunning landings.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#tentang" class="">
+                        <button type="button" aria-disabled="false"
+                            class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed bg-navy stroke-white px-6 text-white hover:bg-sky-950 h-[42px] min-w-[42px] gap-2 disabled:bg-slate-100 disabled:stroke-slate-400 disabled:text-slate-400 disabled:hover:bg-slate-100">
+                            <div>Jelajahi</div>
+                        </button>
+                    </a>
+                    <a href="#program" class="">
+                        <button type="button" aria-disabled="false"
+                            class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-sand px-2 text-sand h-[42px] min-w-[42px] gap-2 disabled:stroke-slate-400 disabled:text-slate-400 hover:stroke-sand hover:text-sand">
+                            <div>Program</div>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E4B07A"
+                                stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" class="size-6 stroke-inherit">
+                                <path d="M11 16L15 12L11 8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="12" cy="12" r="9"></circle>
+                            </svg>
+                        </button>
+                    </a>
                 </div>
             </div>
-            <!-- End Button Group -->
-
-            <!-- Collapse -->
-            <div id="hs-navbar-hcail"
-                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-6"
-                aria-labelledby="hs-navbar-hcail-collapse">
+        </section>
+    </section>
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="text-center">
                 <div
-                    class="flex flex-col gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
-                    <div>
-                        <a class="relative inline-block text-black focus:outline-hidden before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-lime-400 dark:text-black"
-                            href="#" aria-current="page">Work</a>
-                    </div>
-                    <div>
-                        <a class="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-black dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                            href="#">Services</a>
-                    </div>
-                    <div>
-                        <a class="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-black dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                            href="#">About</a>
-                    </div>
-                    <div>
-                        <a class="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-black dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                            href="#">Careers</a>
-                    </div>
-                    <div>
-                        <a class="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-black dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                            href="#">Blog</a>
-                    </div>
+                    class="flex items-center justify-center  mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-sand bg-navy p-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M6.23509 6.45329C4.85101 7.89148 4 9.84636 4 12C4 16.4183 7.58172 20 12 20C13.0808 20 14.1116 19.7857 15.0521 19.3972C15.1671 18.6467 14.9148 17.9266 14.8116 17.6746C14.582 17.115 13.8241 16.1582 12.5589 14.8308C12.2212 14.4758 12.2429 14.2035 12.3636 13.3943L12.3775 13.3029C12.4595 12.7486 12.5971 12.4209 14.4622 12.1248C15.4097 11.9746 15.6589 12.3533 16.0043 12.8777C16.0425 12.9358 16.0807 12.9928 16.1198 13.0499C16.4479 13.5297 16.691 13.6394 17.0582 13.8064C17.2227 13.881 17.428 13.9751 17.7031 14.1314C18.3551 14.504 18.3551 14.9247 18.3551 15.8472V15.9518C18.3551 16.3434 18.3168 16.6872 18.2566 16.9859C19.3478 15.6185 20 13.8854 20 12C20 8.70089 18.003 5.8682 15.1519 4.64482C14.5987 5.01813 13.8398 5.54726 13.575 5.91C13.4396 6.09538 13.2482 7.04166 12.6257 7.11976C12.4626 7.14023 12.2438 7.12589 12.012 7.11097C11.3905 7.07058 10.5402 7.01606 10.268 7.75495C10.0952 8.2232 10.0648 9.49445 10.6239 10.1543C10.7134 10.2597 10.7307 10.4547 10.6699 10.6735C10.59 10.9608 10.4286 11.1356 10.3783 11.1717C10.2819 11.1163 10.0896 10.8931 9.95938 10.7412C9.64554 10.3765 9.25405 9.92233 8.74797 9.78176C8.56395 9.73083 8.36166 9.68867 8.16548 9.64736C7.6164 9.53227 6.99443 9.40134 6.84992 9.09302C6.74442 8.8672 6.74488 8.55621 6.74529 8.22764C6.74529 7.8112 6.74529 7.34029 6.54129 6.88256C6.46246 6.70541 6.35689 6.56446 6.23509 6.45329ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z">
+                        </path>
+                    </svg>
                 </div>
-            </div>
-            <!-- End Collapse -->
-        </nav>
-    </header>
-    <!-- ========== END HEADER ========== -->
+                <h6 class="text-4xl font-bold text-deep-purple-accent-400 text-sand">1</h6>
+                <p class="mb-2 font-bold text-md text-navy">Desa</p>
+                <p class="text-slate-400">
+                    Fokus pengabdian, wisata alam & UMKM lokal.
 
-    <script src="./assets/vendor/preline/dist/preline.js"></script>
+
+
+                </p>
+            </div>
+            <div class="text-center">
+                <div
+                    class="flex items-center justify-center  mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-sand bg-navy p-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4 11.3333L0 9L12 2L24 9V17.5H22V10.1667L20 11.3333V18.0113L19.7774 18.2864C17.9457 20.5499 15.1418 22 12 22C8.85817 22 6.05429 20.5499 4.22263 18.2864L4 18.0113V11.3333ZM6 12.5V17.2917C7.46721 18.954 9.61112 20 12 20C14.3889 20 16.5328 18.954 18 17.2917V12.5L12 16L6 12.5ZM3.96927 9L12 13.6846L20.0307 9L12 4.31541L3.96927 9Z">
+                        </path>
+                    </svg>
+                </div>
+                <h6 class="text-4xl font-bold text-deep-purple-accent-400 text-sand">19</h6>
+                <p class="mb-2 font-bold text-md text-navy">Mahasiswa</p>
+                <p class="text-slate-400">
+                    Kolaborasi teknologi, sosial & kesehatan.
+
+
+                </p>
+            </div>
+            <div class="text-center">
+                <div
+                    class="flex items-center justify-center  mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-sand bg-navy p-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4.99958 12.9999C4.99958 7.91198 7.90222 3.5636 11.9996 1.81799C16.0969 3.5636 18.9996 7.91198 18.9996 12.9999C18.9996 13.8229 18.9236 14.6264 18.779 15.4027L20.7194 17.2353C20.8845 17.3913 20.9238 17.6389 20.815 17.8383L18.3196 22.4133C18.1873 22.6557 17.8836 22.7451 17.6412 22.6128C17.5993 22.59 17.5608 22.5612 17.5271 22.5274L15.2925 20.2928C15.1049 20.1053 14.8506 19.9999 14.5854 19.9999H9.41379C9.14857 19.9999 8.89422 20.1053 8.70668 20.2928L6.47209 22.5274C6.27683 22.7227 5.96025 22.7227 5.76498 22.5274C5.73122 22.4937 5.70246 22.4552 5.67959 22.4133L3.18412 17.8383C3.07537 17.6389 3.11464 17.3913 3.27975 17.2353L5.22014 15.4027C5.07551 14.6264 4.99958 13.8229 4.99958 12.9999ZM6.47542 19.6957L7.29247 18.8786C7.85508 18.316 8.61814 17.9999 9.41379 17.9999H14.5854C15.381 17.9999 16.1441 18.316 16.7067 18.8786L17.5237 19.6957L18.5056 17.8955L17.4058 16.8568C16.9117 16.3901 16.6884 15.7045 16.8128 15.0364C16.9366 14.3722 16.9996 13.6911 16.9996 12.9999C16.9996 9.13037 15.0045 5.69965 11.9996 4.04033C8.99462 5.69965 6.99958 9.13037 6.99958 12.9999C6.99958 13.6911 7.06255 14.3722 7.18631 15.0364C7.31078 15.7045 7.08746 16.3901 6.59338 16.8568L5.49353 17.8955L6.47542 19.6957ZM11.9996 12.9999C10.895 12.9999 9.99958 12.1045 9.99958 10.9999C9.99958 9.89537 10.895 8.99994 11.9996 8.99994C13.1041 8.99994 13.9996 9.89537 13.9996 10.9999C13.9996 12.1045 13.1041 12.9999 11.9996 12.9999Z">
+                        </path>
+                    </svg>
+                </div>
+                <h6 class="text-4xl font-bold text-deep-purple-accent-400 text-sand">10+ </h6>
+                <p class="mb-2 font-bold text-md text-navy">Program Pemberdayaan</p>
+                <p class="text-slate-400">
+                    Digitalisasi, edukasi, lingkungan & komunitas.
+
+
+                </p>
+            </div>
+            <div class="text-center">
+                <div
+                    class="flex items-center justify-center  mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-sand bg-navy p-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.4023 13.7511 13.0963 12.1763 13.0051L12 13C10.4023 13 9.09634 14.2489 9.00509 15.8237L9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z">
+                        </path>
+                    </svg>
+                </div>
+                <h6 class="text-4xl font-bold text-deep-purple-accent-400 text-sand">150+
+                </h6>
+                <p class="mb-2 font-bold text-md text-navy"> Warga Terlibat Langsung</p>
+                <p class="text-slate-400">
+                    Pelatihan, proyek digital & aksi lingkungan.
+
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- // end hero section -->
+
+    <!-- // start tentang program section -->
+    <section id="tentang"></section>
+    <!-- // end tentang program section -->
+
+    <!-- // start tim section -->
+    <section id="tim"></section>
+    <!-- // end tim section -->
+
+    <!-- // start program & kegiatan section -->
+    <section id="program"></section>
+    <!-- // end program & kegiatan section -->
+
+    <!-- // start galeri section -->
+
+    <!-- // end galeri section -->
+
+    <!-- // start kontak section -->
+    <section id="kontak"></section>
+    <!-- // end kontak section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
 </body>
 
 </html>
