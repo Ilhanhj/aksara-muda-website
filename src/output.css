@@ -79,6 +79,7 @@
     --animate-bounce-1: bounceCustom 1.5s ease-in-out infinite;
     --animate-bounce-2: bounceCustom 1.7s ease-in-out infinite;
     --animate-bounce-3: bounceCustom 1.9s ease-in-out infinite;
+    --animate-bounce-4: bounceCustom 2.1s ease-in-out infinite;
   }
 }
 @layer base {
@@ -251,6 +252,9 @@
   .top-72 {
     top: calc(var(--spacing) * 72);
   }
+  .right-40 {
+    right: calc(var(--spacing) * 40);
+  }
   .right-52 {
     right: calc(var(--spacing) * 52);
   }
@@ -418,6 +422,9 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
   .w-\[1\.688rem\] {
     width: 1.688rem;
   }
@@ -488,6 +495,9 @@
   }
   .animate-bounce-3 {
     animation: var(--animate-bounce-3);
+  }
+  .animate-bounce-4 {
+    animation: var(--animate-bounce-4);
   }
   .cursor-pointer {
     cursor: pointer;
