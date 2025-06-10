@@ -88,10 +88,12 @@
         <!-- ========== END HEADER ========== -->
 
         <section class="flex items-start justify-center w-full bg-center bg-no-repeat bg-cover">
-            <img src="./assets/cursor/iqbal.png" alt="" class="absolute w-16 right-96 top-36 animate-bounce-1" />
+            <div class="hero-section">
+
+            </div>
+            <!-- <img src="./assets/cursor/iqbal.png" alt="" class="absolute w-16 right-96 top-36 animate-bounce-1" />
             <img src="./assets/cursor/ilhan.png" alt="" class="absolute w-16 right-72 top-52 animate-bounce-2" />
-            <img src="./assets/cursor/ridwan.png" alt="" class="absolute w-16 right-52 top-72 animate-bounce-3" />
-            <img src="./assets/cursor/ameng.png" alt="" class="absolute w-16 right-40 top-[22rem] animate-bounce-4" />
+            <img src="./assets/cursor/ridwan.png" alt="" class="absolute w-16 right-52 top-72 animate-bounce-3" /> -->
 
 
             <div
@@ -673,6 +675,47 @@
 
     <!-- // end footer section -->
     <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
+    <script>
+        const filenames = ['adi.png', 'ameng.png', 'amir.png', 'anisa.png', 'aulia.png', 'awa.png',
+            'azizah.png', 'fidela.png', 'ilhan.png', 'iqbal.png', 'maryam.png',
+            'nabila.png', 'ridwan.png', 'risma.png', 'rizka.png', 'shofi.png',
+            'tasya.png', 'tiara.png', 'yunia.png', 'zize.png'];
+        const hero = document.querySelector('.hero-section');
+        const radiusX = 420;
+        const radiusY = 300;
+
+        const elements = [];
+
+        filenames.forEach((name, i) => {
+            const img = document.createElement('img');
+            img.src = `./assets/cursor/${name}`;
+            img.alt = name.replace('.png', '');
+            img.className = `absolute w-16 animate-bounce-${(i % 3) + 1}`;
+
+            hero.appendChild(img);
+            elements.push({ img, i });
+        });
+
+        function updatePositions() {
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+
+            elements.forEach(({ img, i }) => {
+                const angle = (2 * Math.PI / filenames.length) * i;
+                const offsetX = radiusX * Math.cos(angle);
+                const offsetY = radiusY * Math.sin(angle);
+
+                const posX = centerX + offsetX - 40;
+                const posY = centerY + offsetY - 30;
+
+                img.style.left = `${posX}px`;
+                img.style.top = `${posY}px`;
+            });
+        }
+
+        updatePositions();
+        window.addEventListener('resize', updatePositions);
+    </script>
 </body>
 
 </html>
