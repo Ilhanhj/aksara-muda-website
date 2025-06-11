@@ -9,28 +9,7 @@
   --color-cream: #f4eae0;
 }
 
-@theme {
-  --animate-bounce-1: bounceCustom 1.5s ease-in-out infinite;
-  --animate-bounce-2: bounceCustom 1.7s ease-in-out infinite;
-  --animate-bounce-3: bounceCustom 1.9s ease-in-out infinite;
-  --animate-bounce-4: bounceCustom 2.1s ease-in-out infinite;
-  --animate-bounce-5: bounceCustom 2.3s ease-in-out infinite;
-  --animate-bounce-6: bounceCustom 2.6s ease-in-out infinite;
-  --animate-bounce-7: bounceCustom 2.8s ease-in-out infinite;
-  --animate-bounce-8: bounceCustom 3s ease-in-out infinite;
-  --animate-bounce-9: bounceCustom 3.3s ease-in-out infinite;
-  --animate-bounce-10: bounceCustom 3.6s ease-in-out infinite;
-  --animate-bounce-11: bounceCustom 3.9s ease-in-out infinite;
-  --animate-bounce-12: bounceCustom 4.2s ease-in-out infinite;
-  --animate-bounce-13: bounceCustom 4.5s ease-in-out infinite;
-  --animate-bounce-14: bounceCustom 4.8s ease-in-out infinite;
-  --animate-bounce-15: bounceCustom 5.1s ease-in-out infinite;
-  --animate-bounce-16: bounceCustom 5.4s ease-in-out infinite;
-  --animate-bounce-17: bounceCustom 5.7s ease-in-out infinite;
-  --animate-bounce-18: bounceCustom 6s ease-in-out infinite;
-  --animate-bounce-19: bounceCustom 6.3s ease-in-out infinite;
-  --animate-bounce-20: bounceCustom 6.6s ease-in-out infinite;
-
+@layer utilities {
   @keyframes bounceCustom {
     0%,
     100% {
@@ -39,5 +18,66 @@
     50% {
       transform: translateY(-20px);
     }
+  }
+
+  .animate-bounce-1 {
+    animation: bounceCustom 1.5s ease-in-out infinite;
+  }
+  .animate-bounce-2 {
+    animation: bounceCustom 1.7s ease-in-out infinite;
+  }
+  .animate-bounce-3 {
+    animation: bounceCustom 1.9s ease-in-out infinite;
+  }
+  .animate-bounce-4 {
+    animation: bounceCustom 2.1s ease-in-out infinite;
+  }
+  .animate-bounce-5 {
+    animation: bounceCustom 2.3s ease-in-out infinite;
+  }
+  .animate-bounce-6 {
+    animation: bounceCustom 2.6s ease-in-out infinite;
+  }
+  .animate-bounce-7 {
+    animation: bounceCustom 2.8s ease-in-out infinite;
+  }
+  .animate-bounce-8 {
+    animation: bounceCustom 3s ease-in-out infinite;
+  }
+  .animate-bounce-9 {
+    animation: bounceCustom 3.3s ease-in-out infinite;
+  }
+  .animate-bounce-10 {
+    animation: bounceCustom 3.6s ease-in-out infinite;
+  }
+  .animate-bounce-11 {
+    animation: bounceCustom 3.9s ease-in-out infinite;
+  }
+  .animate-bounce-12 {
+    animation: bounceCustom 4.2s ease-in-out infinite;
+  }
+  .animate-bounce-13 {
+    animation: bounceCustom 4.5s ease-in-out infinite;
+  }
+  .animate-bounce-14 {
+    animation: bounceCustom 4.8s ease-in-out infinite;
+  }
+  .animate-bounce-15 {
+    animation: bounceCustom 5.1s ease-in-out infinite;
+  }
+  .animate-bounce-16 {
+    animation: bounceCustom 5.4s ease-in-out infinite;
+  }
+  .animate-bounce-17 {
+    animation: bounceCustom 5.7s ease-in-out infinite;
+  }
+  .animate-bounce-18 {
+    animation: bounceCustom 6s ease-in-out infinite;
+  }
+  .animate-bounce-19 {
+    animation: bounceCustom 6.3s ease-in-out infinite;
+  }
+  .animate-bounce-20 {
+    animation: bounceCustom 6.6s ease-in-out infinite;
   }
 }
