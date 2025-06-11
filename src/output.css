@@ -77,9 +77,6 @@
     --color-sand: #e4b07a;
     --color-cream: #f4eae0;
     --animate-bounce-1: bounceCustom 1.5s ease-in-out infinite;
-    --animate-bounce-2: bounceCustom 1.7s ease-in-out infinite;
-    --animate-bounce-3: bounceCustom 1.9s ease-in-out infinite;
-    --animate-bounce-4: bounceCustom 2.1s ease-in-out infinite;
   }
 }
 @layer base {
@@ -242,30 +239,6 @@
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
-  }
-  .top-36 {
-    top: calc(var(--spacing) * 36);
-  }
-  .top-52 {
-    top: calc(var(--spacing) * 52);
-  }
-  .top-72 {
-    top: calc(var(--spacing) * 72);
-  }
-  .top-\[22rem\] {
-    top: 22rem;
-  }
-  .right-40 {
-    right: calc(var(--spacing) * 40);
-  }
-  .right-52 {
-    right: calc(var(--spacing) * 52);
-  }
-  .right-72 {
-    right: calc(var(--spacing) * 72);
-  }
-  .right-96 {
-    right: calc(var(--spacing) * 96);
   }
   .z-10 {
     z-index: 10;
@@ -437,15 +410,6 @@
   .animate-bounce-1 {
     animation: var(--animate-bounce-1);
   }
-  .animate-bounce-2 {
-    animation: var(--animate-bounce-2);
-  }
-  .animate-bounce-3 {
-    animation: var(--animate-bounce-3);
-  }
-  .animate-bounce-4 {
-    animation: var(--animate-bounce-4);
-  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -603,9 +567,6 @@
   }
   .bg-cream {
     background-color: var(--color-cream);
-  }
-  .bg-gray-200 {
-    background-color: var(--color-gray-200);
   }
   .bg-navy {
     background-color: var(--color-navy);
