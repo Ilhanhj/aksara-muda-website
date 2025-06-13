@@ -81,3 +81,13 @@
     animation: bounceCustom 8.7s ease-in-out infinite;
   }
 }
+
+.active {
+  @apply scale-x-100;
+}
+.activate {
+  @apply scale-100 origin-bottom-right;
+}
+.unactive {
+  @apply scale-0 origin-bottom-right;
+}
