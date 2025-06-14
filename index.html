@@ -91,9 +91,81 @@
         <!-- ========== END HEADER ========== -->
 
         <section class="flex items-start justify-center w-full bg-center bg-no-repeat bg-cover ">
-            <div class="hero-section">
-                <img src="./assets/bg-sky.png" alt="" class="absolute z-10 top-18 right-[32rem]  w-80">
-                <img src="./assets/bg-sand.png" alt="" class="absolute z-10 top-72 right-[27rem] w-[30rem]">
+            <img src="./assets/bg-sky.png" alt="" class="absolute z-10 top-18 right-[32rem]  w-80">
+            <img src="./assets/bg-sand.png" alt="" class="absolute z-10 top-72 right-[27rem] w-[30rem]">
+            <div class="hero-section ">
+                <!-- The Bot Section START -->
+                <div id="chatbot"
+                    class="w-full h-screen bg-gray-950 bg-opacity-10 backdrop-blur-lg fixed bottom-0 right-0 z-[400] scale-0 origin-top transition duration-300 overflow-y-auto lg:w-1/3 lg:h-3/4 lg:overflow-y-auto scrollbar   scrollbar-thumb-sand scrollbar-track-navy ">
+                    <div class="sticky top-0 flex w-full h-20 bg-navy z-100 ">
+                        <div class="container flex items-center justify-between px-4">
+                            <div class="flex text-white">
+                                <img src="dist/images/chatbot.jpg" width="100" height="100" fetchpriority="low" alt=""
+                                    class="container w-12 h-12 bg-white rounded-full">
+                                <div class="ml-4 text-white">
+                                    <h1 class="font-semibold">Ilhan Bot</h1>
+                                    <h1 class="text-xs ">Ask me a question</h1>
+                                </div>
+                            </div>
+                            <div class="text-white flex justify-end cursor-pointer p-3 rounded-lg hover:bg-[#dbeb36]"
+                                id="close">
+                                <i data-feather="x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chat-area" class="w-full">
+                        <div
+                            class="container flex items-center justify-center w-20 p-3 m-2 lg:m-2 h-14 bg-gray-50 rounded-xl dark:bg-darkSec">
+                            <h1 class="text-navyOld">Hi ! 👋🏻 </h1>
+                        </div>
+                        <div
+                            class="container flex items-center w-3/4 p-3 m-2 lg:m-2 bg-gray-50 rounded-xl dark:bg-darkSec">
+                            <h1 class="text-navyOld">I am Ilhan's Bot, ready to provide professional assistance and
+                                information
+                                about
+                                Ilhan's work. </h1>
+                        </div>
+                        <div
+                            class="container flex items-center w-2/5 p-3 m-2 lg:m-2 lg:w-1/2 bg-gray-50 rounded-xl dark:bg-darkSec">
+                            <h1 class="text-navyOld"> How can i help you today ?</h1>
+                        </div>
+                        <div
+                            class="container flex items-center w-2/5 p-3 m-2 lg:m-2 bg-gray-50 rounded-xl dark:bg-darkSec">
+                            <h1 class="mr-1 text-navyOld">And remember to<span class=" text-sand"> scroll
+                                    after you
+                                    click</span>
+                            </h1>
+                        </div>
+                        <div id="question">
+                            <div id="chat-hello"
+                                class="container flex items-center w-2/5 p-3 m-2 bg-transparent border-2 rounded-full cursor-pointer lg:m-2 border-sand">
+                                <h1 class="text-sand">Just saying Hello !</h1>
+                            </div>
+                            <div id="chat-consult"
+                                class="container flex items-center w-3/5 p-3 m-2 bg-transparent border-2 rounded-full cursor-pointer lg:m-2 border-sand">
+                                <h1 class="text-sand">Interested in Consultation</h1>
+                            </div>
+                            <div id="chat-hire"
+                                class="container flex items-center w-2/5 p-3 m-2 bg-transparent border-2 rounded-full cursor-pointer lg:m-2 border-sand">
+                                <h1 class="text-sand">I'd like to hire you !</h1>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- ! Answer -->
+
+                </div>
+                <!-- Button -->
+                <div id="chatbot-button"
+                    class="w-14 h-14 rounded-tl-lg shadow-inner rounded-tr-lg bg-sand text-dark flex justify-center scale-100 fixed bottom-0 right-4 cursor-pointer hover:bg-[#9354ffc7] lg:w-32 lg:h-14">
+                    <div class="flex items-center gap-2 ">
+                        <i data-feather="message-circle" class="block m-auto text-white" width="30"></i>
+                        <h1 class="hidden text-white text-md lg:block">HanBot</h1>
+                    </div>
+                </div>
+                <!-- The Bot Section END -->
             </div>
 
             <div
@@ -103,23 +175,27 @@
                     <span
                         class="inline-flex px-3 py-1 text-sm font-semibold text-center transition-all duration-300 ease-in-out border rounded-full h-7 border-navy bg-sand text-cream">1
                         - 30 JUNI 2025</span>
-                    <div class="z-50 flex flex-col  gap-6">
-                        <h3 class="text-4xl font-semibold text-slate-950 md:text-6xl">Merangkai Aksara Menyulam Perubahan
+                    <div class="z-50 flex flex-col gap-6">
+                        <h3 class="text-4xl font-semibold text-slate-950 lg:text-5xl">Merangkai Aksara Menyulam
+                            Perubahan
                         </h3>
-                        <p class="text-lg font-normal leading-7 text-slate-400">Merangkai Aksara untuk menyusun pesan penuh makna,
+                        <p class="font-normal leading-7 text-md text-neutral-400 lg:w-full lg:px-14">
+                            Merangkai Aksara untuk menyusun
+                            pesan
+                            penuh makna,
                             menyulam perubahan lewat langkah kecil yang menciptakan dampak mendalam.</p>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <a href="index.html#tentang" class="z-50">
                         <button type="button" aria-disabled="false"
-                            class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed bg-navy stroke-white px-6 text-white hover:bg-sky-950 h-[42px] min-w-[42px] gap-2 disabled:bg-slate-100 disabled:stroke-slate-400 disabled:text-slate-400 disabled:hover:bg-slate-100">
+                            class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed bg-navy stroke-white px-6 text-white hover:bg-sky-950 h-[42px] min-w-[42px] gap-2 disabled:bg-slate-100 disabled:stroke-slate-400 disabled:text-neutral-400 disabled:hover:bg-slate-100">
                             <div>Jelajahi</div>
                         </button>
                     </a>
                     <a href="#program" class="z-50">
                         <button type="button" aria-disabled="false"
-                            class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-sand px-2 text-sand h-[42px] min-w-[42px] gap-2 disabled:stroke-slate-400 disabled:text-slate-400 hover:stroke-sand hover:text-sand">
+                            class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-sand px-2 text-sand h-[42px] min-w-[42px] gap-2 disabled:stroke-slate-400 disabled:text-neutral-400 hover:stroke-sand hover:text-sand">
                             <div>Program</div>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E4B07A"
                                 stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" class="size-6 stroke-inherit">
@@ -146,7 +222,7 @@
                 </div>
                 <h6 class="text-4xl font-bold text-white text-deep-purple-accent-400">1</h6>
                 <p class="mb-2 text-base font-bold text-sand">Desa</p>
-                <p class="text-sm text-slate-400">
+                <p class="text-sm text-neutral-400">
                     Fokus pengabdian, wisata alam & UMKM lokal.
                 </p>
             </div>
@@ -161,7 +237,7 @@
                 </div>
                 <h6 class="text-4xl font-bold text-white text-deep-purple-accent-400">19</h6>
                 <p class="mb-2 text-base font-bold text-sand">Mahasiswa</p>
-                <p class="text-sm text-slate-400">
+                <p class="text-sm text-neutral-400">
                     Kolaborasi teknologi, sosial & kesehatan.
 
 
@@ -178,7 +254,7 @@
                 </div>
                 <h6 class="text-4xl font-bold text-white text-deep-purple-accent-400">10+ </h6>
                 <p class="mb-2 text-base font-bold text-sand">Program Pemberdayaan</p>
-                <p class="text-sm text-slate-400">
+                <p class="text-sm text-neutral-400">
                     Digitalisasi, edukasi, lingkungan & komunitas.
 
 
@@ -196,7 +272,7 @@
                 <h6 class="text-4xl font-bold text-white text-deep-purple-accent-400">150+
                 </h6>
                 <p class="mb-2 text-base font-bold text-sand"> Warga Terlibat Langsung</p>
-                <p class="text-sm text-slate-400">
+                <p class="text-sm text-neutral-400">
                     Pelatihan, proyek digital & aksi lingkungan.
 
 
@@ -213,145 +289,142 @@
         <!-- Features -->
         <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
             <!-- Title -->
-            <div class="w-full px-4 mx-auto max-w-7xl md:px-5 lg:px-5">
-                <div class="grid items-center justify-start w-full grid-cols-1 gap-8 lg:grid-cols-2">
-                    <div class="inline-flex flex-col items-center justify-start w-full gap-10 lg:items-start">
-                        <div class="flex flex-col items-center justify-start w-full gap-4 lg:items-start">
-                            <h2
-                                class="text-4xl font-bold leading-normal text-center text-gray-900 text-navy font-manrope lg:text-start">
-                                Tentang</h2>
-                            <p class="text-base font-normal leading-relaxed text-center text-gray-400 lg:text-start">
-                                "Aksara Muda" menggambarkan sekelompok anak muda yang menjadi penyampai pesan dan
-                                pembawa perubahan lewat tindakan nyata. Seperti aksara yang menyusun kata dan membentuk
-                                cerita, kelompok ini menyusun karya dan kontribusi dalam masyarakat selama KKN. Nama ini
-                                juga menyiratkan harapan bahwa setiap langkah kecil yang dilakukan bisa meninggalkan
-                                jejak yang bermakna—layaknya aksara yang tertulis dalam sejarah.</p>
-                        </div>
+            <div class="grid items-center justify-start w-full grid-cols-1 gap-8 lg:grid-cols-2">
+                <div class="inline-flex flex-col items-center justify-start w-full gap-10 lg:items-start">
+                    <div class="flex flex-col items-center justify-start w-full gap-4 lg:items-start">
+
+                        <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Tentang</h2>
+                        <p class="text-base font-normal leading-relaxed text-center text-gray-400 lg:text-start">
+                        <p class="text-base font-normal leading-relaxed  text-gray-400 lg:text-start text-justify">
+                            "Aksara Muda" menggambarkan sekelompok anak muda yang menjadi penyampai pesan dan
+                            pembawa perubahan lewat tindakan nyata. Seperti aksara yang menyusun kata dan membentuk
+                            cerita, kelompok ini menyusun karya dan kontribusi dalam masyarakat selama KKN. Nama ini
+                            juga menyiratkan harapan bahwa setiap langkah kecil yang dilakukan bisa meninggalkan
+                            jejak yang bermakna—layaknya aksara yang tertulis dalam sejarah.</p>
                     </div>
-                    <img class="object-cover h-full mx-auto lg:mx-0 rounded-3xl"
-                        src="https://pagedone.io/asset/uploads/1717751272.png" alt="about Us image" />
                 </div>
+                <img class="object-cover h-full mx-auto lg:mx-0 rounded-3xl"
+                    src="https://pagedone.io/asset/uploads/1717751272.png" alt="about Us image" />
             </div>
 
         </div>
         <!-- End Features -->
         <!-- Icon Blocks -->
         <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
-            <div class="w-full px-4 mx-auto max-w-7xl md:px-5 lg:px-5">
-                <!-- Grid -->
-                <div class="grid gap-12">
-                    <div>
-                        <h2 class="text-3xl font-bold text-gray-800 lg:text-4xl text-navy">
-                            Our vision
-                        </h2>
-                        <p class="mt-3 text-gray-400 dark:text-neutral-400">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet libero animi neque eos? At,
-                            consectetur nobis! Quia voluptatibus odit laboriosam libero explicabo doloremque praesentium
-                            saepe minus vel, quas voluptatem fugiat!
-                        </p>
-                    </div>
-                    <div>
-                        <h2 class="text-3xl font-bold text-gray-800 lg:text-4xl text-navy">
-                            Our Mission
-                        </h2>
-                    </div>
-
-                    <div class="space-y-6 lg:space-y-10">
-                        <!-- Icon Block -->
-                        <div class="flex gap-x-5 sm:gap-x-8">
-                            <svg class="mt-2 text-gray-800 shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
-                                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
-                                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
-                                <path d="M10 6h4" />
-                                <path d="M10 10h4" />
-                                <path d="M10 14h4" />
-                                <path d="M10 18h4" />
-                            </svg>
-                            <div class="grow">
-                                <h3 class="text-base font-semibold text-gray-800 sm:text-lg text-sand">
-                                    High quality Co-Living spaces
-                                </h3>
-                                <p class="mt-1 text-gray-600 dark:text-neutral-400">
-                                    Our fully furnished spaces are designed and purpose-built with Co-Living in mind,
-                                    featuring high-end finishes and amenities that go far beyond traditional apartment
-                                    buildings.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Icon Block -->
-
-                        <!-- Icon Block -->
-                        <div class="flex gap-x-5 sm:gap-x-8">
-                            <svg class="mt-2 text-gray-800 shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                <circle cx="9" cy="7" r="4" />
-                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            </svg>
-                            <div class="grow">
-                                <h3 class="text-base font-semibold text-gray-800 sm:text-lg text-sand">
-                                    Fostering vibrant communities
-                                </h3>
-                                <p class="mt-1 text-gray-600 dark:text-neutral-400">
-                                    Our passion is bringing people together. Beyond creating beautiful spaces, we
-                                    provide shared experiences.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Icon Block -->
-
-                        <!-- Icon Block -->
-                        <div class="flex gap-x-5 sm:gap-x-8">
-                            <svg class="mt-2 text-gray-800 shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 10v12" />
-                                <path
-                                    d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                            </svg>
-                            <div class="grow">
-                                <h3 class="text-base font-semibold text-gray-800 sm:text-lg text-sand">
-                                    Simple and all-inclusive
-                                </h3>
-                                <p class="mt-1 text-gray-600 dark:text-neutral-400">
-                                    We worry about the details so that our residents don't have to. From our online
-                                    application process to simple, all-inclusive billing we aim to make the living
-                                    experience as effortless as possible.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Icon Block -->
-
-                        <!-- Icon Block -->
-                        <div class="flex gap-x-5 sm:gap-x-8">
-                            <svg class="mt-2 text-gray-800 shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 10v12" />
-                                <path
-                                    d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                            </svg>
-                            <div class="grow">
-                                <h3 class="text-base font-semibold text-gray-800 sm:text-lg text-sand">
-                                    Simple and all-inclusive
-                                </h3>
-                                <p class="mt-1 text-gray-600 dark:text-neutral-400">
-                                    We worry about the details so that our residents don't have to. From our online
-                                    application process to simple, all-inclusive billing we aim to make the living
-                                    experience as effortless as possible.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Icon Block -->
-                    </div>
+            <!-- Grid -->
+            <div class="grid gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Our Vision
+                    </h2>
+                    <p class="mt-3 text-gray-400 dark:text-neutral-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet libero animi neque eos? At,
+                        consectetur nobis! Quia voluptatibus odit laboriosam libero explicabo doloremque praesentium
+                        saepe minus vel, quas voluptatem fugiat!
+                    </p>
                 </div>
-                <!-- End Grid -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Our Mission
+                    </h2>
+
+
+
+                </div>
+
+                <div class="space-y-6 lg:space-y-10">
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                            <path d="M10 6h4" />
+                            <path d="M10 10h4" />
+                            <path d="M10 14h4" />
+                            <path d="M10 18h4" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                High quality Co-Living spaces
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                Our fully furnished spaces are designed and purpose-built with Co-Living in mind,
+                                featuring high-end finishes and amenities that go far beyond traditional apartment
+                                buildings.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                Fostering vibrant communities
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                Our passion is bringing people together. Beyond creating beautiful spaces, we
+                                provide shared experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 10v12" />
+                            <path
+                                d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                Simple and all-inclusive
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                We worry about the details so that our residents don't have to. From our online
+                                application process to simple, all-inclusive billing we aim to make the living
+                                experience as effortless as possible.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 10v12" />
+                            <path
+                                d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                Simple and all-inclusive
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                We worry about the details so that our residents don't have to. From our online
+                                application process to simple, all-inclusive billing we aim to make the living
+                                experience as effortless as possible.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+                </div>
             </div>
+            <!-- End Grid -->
         </div>
     </section>
     <!-- // end tentang program section -->
@@ -363,7 +436,104 @@
     <!-- // start program & kegiatan section -->
     <section id="program">
         <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
+            <!-- Title of Program -->
+            <div class="max-w-3xl mb-10 lg:mb-14">
+                <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Program</h2>
+                <p class="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
+            </div>
+            <!-- End Title of Program -->
+            <!-- Program start -->
+            <div
+                class="flex flex-wrap items-center justify-center gap-x-5 gap-y-8 lg:gap-y-0 md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+                <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-indigo-50 group-hover:bg-indigo-600">
+                        <svg class="transition-all duration-500 stroke-indigo-600 group-hover:stroke-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 27.5L15 25M15 25V21.25M15 25L20 27.5M8.75 14.375L12.5998 11.0064C13.1943 10.4862 14.1163 10.6411 14.5083 11.327L15.4917 13.048C15.8837 13.7339 16.8057 13.8888 17.4002 13.3686L21.25 10M2.5 2.5H27.5M26.25 2.5V13.25C26.25 17.0212 26.25 18.9069 25.0784 20.0784C23.9069 21.25 22.0212 21.25 18.25 21.25H11.75C7.97876 21.25 6.09315 21.25 4.92157 20.0784C3.75 18.9069 3.75 17.0212 3.75 13.25V2.5"
+                                stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        IF/SI
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni, deserunt reprehenderit
+                        dolorem provident veritatis.
+                    </p>
+                </div>
+                <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-pink-50 group-hover:bg-pink-600">
+                        <svg class="transition-all duration-500 stroke-pink-600 group-hover:stroke-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.5 7.5C2.5 4.73858 4.73858 2.5 7.5 2.5C10.2614 2.5 12.5 4.73858 12.5 7.5C12.5 10.2614 10.2614 12.5 7.5 12.5C4.73858 12.5 2.5 10.2614 2.5 7.5Z"
+                                stroke="" stroke-width="2"></path>
+                            <path
+                                d="M2.5 22.5C2.5 20.143 2.5 18.9645 3.23223 18.2322C3.96447 17.5 5.14298 17.5 7.5 17.5C9.85702 17.5 11.0355 17.5 11.7678 18.2322C12.5 18.9645 12.5 20.143 12.5 22.5C12.5 24.857 12.5 26.0355 11.7678 26.7678C11.0355 27.5 9.85702 27.5 7.5 27.5C5.14298 27.5 3.96447 27.5 3.23223 26.7678C2.5 26.0355 2.5 24.857 2.5 22.5Z"
+                                stroke="" stroke-width="2"></path>
+                            <path
+                                d="M17.5 7.5C17.5 5.14298 17.5 3.96447 18.2322 3.23223C18.9645 2.5 20.143 2.5 22.5 2.5C24.857 2.5 26.0355 2.5 26.7678 3.23223C27.5 3.96447 27.5 5.14298 27.5 7.5C27.5 9.85702 27.5 11.0355 26.7678 11.7678C26.0355 12.5 24.857 12.5 22.5 12.5C20.143 12.5 18.9645 12.5 18.2322 11.7678C17.5 11.0355 17.5 9.85702 17.5 7.5Z"
+                                stroke="" stroke-width="2"></path>
+                            <path
+                                d="M17.5 22.5C17.5 19.7386 19.7386 17.5 22.5 17.5C25.2614 17.5 27.5 19.7386 27.5 22.5C27.5 25.2614 25.2614 27.5 22.5 27.5C19.7386 27.5 17.5 25.2614 17.5 22.5Z"
+                                stroke="" stroke-width="2"></path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        Farmasi
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et necessitatibus impedit
+                        perferendis molestias aut?
+                    </p>
+                </div>
+                <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-teal-50 group-hover:bg-teal-600">
+                        <svg class="transition-all duration-500 stroke-teal-600 group-hover:stroke-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.75 26.25H26.25M6.25 22.875C4.86929 22.875 3.75 21.8676 3.75 20.625V12.75C3.75 11.5074 4.86929 10.5 6.25 10.5C7.63071 10.5 8.75 11.5074 8.75 12.75V20.625C8.75 21.8676 7.63071 22.875 6.25 22.875ZM15 22.875C13.6193 22.875 12.5 21.8676 12.5 20.625V9.375C12.5 8.13236 13.6193 7.125 15 7.125C16.3807 7.125 17.5 8.13236 17.5 9.375V20.625C17.5 21.8676 16.3807 22.875 15 22.875ZM23.75 22.875C22.3693 22.875 21.25 21.8676 21.25 20.625V6C21.25 4.75736 22.3693 3.75 23.75 3.75C25.1307 3.75 26.25 4.75736 26.25 6V20.625C26.25 21.8676 25.1307 22.875 23.75 22.875Z"
+                                stroke="" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        Hubungan Internasional
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eos, quia ipsa id aliquid maxime.
+                    </p>
+                </div>
+                <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-orange-50 group-hover:bg-orange-600">
+                        <svg class="transition-all duration-500 stroke-orange-600 group-hover:stroke-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.4167 12.0833V21.25M5.41667 21.25V20.8333C5.41667 19.262 5.41667 18.4763 5.90482 17.9882C6.39298 17.5 7.17865 17.5 8.75 17.5H22.0833C23.6547 17.5 24.4404 17.5 24.9285 17.9882C25.4167 18.4763 25.4167 19.262 25.4167 20.8333V21.25M15.4167 9.16667C13.8453 9.16667 13.0596 9.16667 12.5715 8.67851C12.0833 8.19036 12.0833 7.40468 12.0833 5.83333C12.0833 4.26198 12.0833 3.47631 12.5715 2.98816C13.0596 2.5 13.8453 2.5 15.4167 2.5C16.988 2.5 17.7737 2.5 18.2618 2.98816C18.75 3.47631 18.75 4.26198 18.75 5.83333C18.75 7.40468 18.75 8.19036 18.2618 8.67851C17.7737 9.16667 16.988 9.16667 15.4167 9.16667ZM7.08333 25.8333C7.08333 26.7538 6.33714 27.5 5.41667 27.5C4.49619 27.5 3.75 26.7538 3.75 25.8333C3.75 24.9129 4.49619 24.1667 5.41667 24.1667C6.33714 24.1667 7.08333 24.9129 7.08333 25.8333ZM17.0833 25.8333C17.0833 26.7538 16.3371 27.5 15.4167 27.5C14.4962 27.5 13.75 26.7538 13.75 25.8333C13.75 24.9129 14.4962 24.1667 15.4167 24.1667C16.3371 24.1667 17.0833 24.9129 17.0833 25.8333ZM27.0833 25.8333C27.0833 26.7538 26.3371 27.5 25.4167 27.5C24.4962 27.5 23.75 26.7538 23.75 25.8333C23.75 24.9129 24.4962 24.1667 25.4167 24.1667C26.3371 24.1667 27.0833 24.9129 27.0833 25.8333Z"
+                                stroke="" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        Administrasi Negara
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod nisi odio fugit,
+                        consectetur aliquam.
+                    </p>
+                </div>
+            </div>
+            <!-- Program end -->
+        </div>
+    </section>
+    <!-- // end program & kegiatan section -->
 
+    <!-- Timeline Start -->
+    <section id="timeline">
+        <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
             <!-- Title of Timeline -->
             <div class="max-w-3xl mb-10 lg:mb-14">
                 <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Timeline</h2>
@@ -435,11 +605,77 @@
                     </div>
                 </li>
             </ol>
+
+            <ol class="items-center mt-5 sm:flex">
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div
+                            class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="text-lg font-semibold text-gray-900 text-sand">Flowbite Library v1.0.0</h3>
+                        <time
+                            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released
+                            on December 2, 2021</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
+                            components and interactive elements.</p>
+                    </div>
+                </li>
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div
+                            class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white bg-navy sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="text-lg font-semibold text-gray-900 text-sand">Flowbite Library v1.2.0</h3>
+                        <time
+                            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released
+                            on December 23, 2021</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
+                            components and interactive elements.</p>
+                    </div>
+                </li>
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div
+                            class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="text-lg font-semibold text-sand">Flowbite Library v1.3.0</h3>
+                        <time
+                            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released
+                            on January 5, 2022</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
+                            components and interactive elements.</p>
+                    </div>
+                </li>
+            </ol>
             <!-- Timeline end -->
         </div>
 
     </section>
-    <!-- // end program & kegiatan section -->
+    <!-- End of Timeline section -->
 
     <!-- // start galeri section -->
 
@@ -453,8 +689,10 @@
             <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
                 <!-- Title -->
                 <div class="max-w-3xl mb-10 lg:mb-14">
-                    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Kontak Kami</h2>
-                    <p class="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
+                    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Halo, Kami di Sini!</h2>
+                    <p class="mt-1 text-neutral-400">Punya pertanyaan, ide seru, atau sekadar ingin say hi? Kami selalu
+                        senang dengar kabar dari kamu. Jangan ragu buat hubungi kami lewat email atau mampir langsung ke
+                        lokasi kami. Kami siap bantu dan ngobrol santai kapan aja!</p>
                 </div>
                 <!-- End Title -->
 
@@ -467,14 +705,14 @@
                                 <div class="relative">
                                     <input type="text" id="hs-tac-input-name"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
-                                        placeholder="Name">
+                                        placeholder="Nama">
                                     <label for="hs-tac-input-name" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-neutral-200 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
                 peer-focus:text-xs
                 peer-focus:-translate-y-1.5
                 peer-focus:text-neutral-200
                 peer-not-placeholder-shown:text-xs
                 peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-neutral-400">Name</label>
+                peer-not-placeholder-shown:text-neutral-400">Nama</label>
                                 </div>
                                 <!-- End Input -->
 
@@ -497,29 +735,29 @@
                                 <div class="relative">
                                     <input type="text" id="hs-tac-input-company"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
-                                        placeholder="Company">
-                                    <label for="hs-tac-input-company" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-neutral-200 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                                        placeholder="Alamat ">
+                                    <label for="hs-tac-input-alamat " class="absolute top-0 start-0 p-3 sm:p-4 h-full text-neutral-200 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
                 peer-focus:text-xs
                 peer-focus:-translate-y-1.5
                 peer-focus:text-neutral-200
                 peer-not-placeholder-shown:text-xs
                 peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-neutral-400">Company</label>
+                peer-not-placeholder-shown:text-neutral-400">Alamat </label>
                                 </div>
                                 <!-- End Input -->
 
                                 <!-- Input -->
                                 <div class="relative">
-                                    <input type="text" id="hs-tac-input-phone"
+                                    <input type="text" id="hs-tac-input-no. Telp"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
-                                        placeholder="Phone">
-                                    <label for="hs-tac-input-phone" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-neutral-200 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                                        placeholder="No. Telp">
+                                    <label for="hs-tac-input-no. Telp" class="absolute top-0 start-0 p-3 sm:p-4 h-full text-neutral-200 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none
                 peer-focus:text-xs
                 peer-focus:-translate-y-1.5
                 peer-focus:text-neutral-200
                 peer-not-placeholder-shown:text-xs
                 peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-neutral-400">Phone</label>
+                peer-not-placeholder-shown:text-neutral-400">No. Telp</label>
                                 </div>
                                 <!-- End Input -->
 
@@ -535,7 +773,7 @@
                 peer-focus:text-neutral-200
                 peer-not-placeholder-shown:text-xs
                 peer-not-placeholder-shown:-translate-y-1.5
-                peer-not-placeholder-shown:text-neutral-400">Tell us about your project</label>
+                peer-not-placeholder-shown:text-neutral-400">Ceritakan sesuatu atau tanyakan apapun di sini…</label>
                                 </div>
                                 <!-- End Textarea -->
                             </div>
@@ -573,11 +811,10 @@
                                 <circle cx="12" cy="10" r="3" />
                             </svg>
                             <div class="grow">
-                                <h4 class="font-semibold text-sand">Our address:</h4>
+                                <h4 class="font-semibold text-sand">Alamat Kami:</h4>
 
                                 <address class="mt-1 text-sm not-italic text-neutral-400">
-                                    300 Bath Street, Tay House<br>
-                                    Glasgow G2 4JR, United Kingdom
+                                    Jalan Widara No.157, Dukuh, Kec. Ibun, Kabupaten Bandung, Jawa Barat 40384
                                 </address>
                             </div>
                         </div>
@@ -593,11 +830,11 @@
                                 <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
                             </svg>
                             <div class="grow">
-                                <h4 class="font-semibold text-sand">Email us:</h4>
+                                <h4 class="font-semibold text-sand">Email Kami:</h4>
 
-                                <a class="mt-1 text-sm text-neutral-400 hover:text-neutral-200 focus:outline-hidden focus:text-neutral-200"
-                                    href="#mailto:example@site.co" target="_blank">
-                                    hello@example.so
+                                <a class="mt-1 text-sm text-neutral-400 hover:text-neutral-300 focus:outline-hidden focus:text-neutral-200"
+                                    href="#mailto:kknaksaramuda22@gmail.com" target="_blank">
+                                    kknaksaramuda22@gmail.com
                                 </a>
                             </div>
                         </div>
@@ -612,9 +849,10 @@
                                 <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
                             </svg>
                             <div class="grow">
-                                <h4 class="font-semibold text-sand">We're hiring</h4>
-                                <p class="mt-1 text-neutral-400">We're thrilled to announce that we're expanding our
-                                    team and looking for talented individuals like you to join us.</p>
+                                <h4 class="font-semibold text-sand">Jadi Bagian Cerita Kami</h4>
+                                <p class="mt-1 text-neutral-400">Kami percaya tiap orang punya cerita. Kamu bisa jadi
+                                    bagian dari perjalanan kami dengan ikut program, jadi relawan, atau sekadar ngasih
+                                    ide keren. Yuk, mulai dari ngobrol di sini!</p>
 
                             </div>
                         </div>
@@ -676,11 +914,11 @@
     <!-- // end footer section -->
     <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
     <script>
-        const filenames = ['maryam.png', 'iqbal.png', 'awa.png', 'ridwan.png', 'adi.png', 'ameng.png', 'nabila.png', 'azizah.png', 'fidela.png',
-             'tiara.png',  'tiara.png', 'shofi.png', 'rizka.png', 'yunia.png','tasya.png', 'zize.png', 'anisa.png', 'amir.png', 'risma.png', 'aulia.png',    
-            'ilhan.png'];
+        const filenames = ['ameng.png', 'risma.png', 'awa.png', 'ridwan.png', 'adi.png', 'anisa.png', 'nabila.png', 'girly.png', 'fidela.png',
+            'angel.png', 'shofi.png', 'rizka.png', 'yunia.png', 'tasya.png', 'jije.png', 'maryam.png', 'iqbal.png', 'ilhan.png', 'aulia.png',
+            'amer.png'];
         const hero = document.querySelector('.hero-section');
-        const radiusX = window.innerWidth * 0.40;
+        const radiusX = window.innerWidth * 0.42;
         const radiusY = window.innerHeight * 0.35;
 
         const elements = [];
@@ -689,7 +927,7 @@
             const img = document.createElement('img');
             img.src = `./assets/cursor/${name}`;
             img.alt = name.replace('.png', '');
-            img.className = `absolute w-16 animate-bounce-${(i % 3) + 1}`;
+            img.className = `absolute animate-bounce-${(i % 3) + 1}`;
 
             hero.appendChild(img);
             elements.push({ img, i });
@@ -697,15 +935,15 @@
 
         function updatePositions() {
             const centerX = window.innerWidth / 2;
-            const centerY = window.innerHeight / 2 + 50; // <--- ini geser ke bawah 80px
+            const centerY = window.innerHeight / 2 + 20; // <--- ini geser ke bawah 80px
 
             elements.forEach(({ img, i }) => {
                 const angle = (2 * Math.PI / filenames.length) * i;
                 const offsetX = radiusX * Math.cos(angle);
                 const offsetY = radiusY * Math.sin(angle);
 
-                const posX = centerX + offsetX - 40;
-                const posY = centerY + offsetY - 30;
+                const posX = centerX + offsetX - 55;
+                const posY = centerY + offsetY - 35;
 
                 img.style.left = `${posX}px`;
                 img.style.top = `${posY}px`;
@@ -715,6 +953,8 @@
         updatePositions();
         window.addEventListener('resize', updatePositions);
     </script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
