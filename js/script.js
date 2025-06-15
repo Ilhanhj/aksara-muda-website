@@ -46,9 +46,9 @@ function userAnswerRight() {
   const answerRight = document.createElement("div");
   answerRight.classList.add("flex");
   answerRight.classList.add("justify-end");
-  answerRight.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-secondary rounded-full flex items-center p-3" data-aos="fade-up"
+  answerRight.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-sand rounded-full flex items-center p-3" data-aos="fade-up"
   data-aos-duration="500"  data-aos-anchor="#chatbot">
-    <h1 class="text-white ">Just saying Hello !</h1>
+    <h1 class="text-white ">Halo Aksmud ! </h1>
     </div>`;
   document.querySelector("#question").classList.add("hidden");
   document.querySelector("#chat-area").appendChild(answerRight);
@@ -57,7 +57,7 @@ function userAnswerRight2() {
   const answerRight2 = document.createElement("div");
   answerRight2.classList.add("flex");
   answerRight2.classList.add("justify-end");
-  answerRight2.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-secondary rounded-full flex items-center p-3" data-aos="fade-up"
+  answerRight2.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-sand rounded-full flex items-center p-3" data-aos="fade-up"
   data-aos-duration="500">
     <h1 class="text-white">I'd like to hire you !</h1>
     </div>`;
@@ -68,7 +68,7 @@ function userAnswerRight3() {
   const answerRight3 = document.createElement("div");
   answerRight3.classList.add("flex");
   answerRight3.classList.add("justify-end");
-  answerRight3.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-secondary rounded-full flex items-center p-3" data-aos="fade-up"
+  answerRight3.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-sand rounded-full flex items-center p-3" data-aos="fade-up"
   data-aos-duration="500">
     <h1 class="text-white ">Other options</h1>
     </div>`;
@@ -80,9 +80,9 @@ function userAnswerRight4() {
   answerRight4.classList.add("flex");
   answerRight4.classList.add("justify-end");
   answerRight4.innerHTML = `<div id="chat-consult"
-  class="container m-2 lg:m-2 w-3/5 bg-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+  class="container m-2 lg:m-2 w-3/5 bg-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
   data-aos-duration="500">
-  <h1 class="text-white">Interested in Consultation</h1>
+  <h1 class="text-white">Ingin konsultasi tentang program kami</h1>
 </div>`;
   document.querySelector("#question").classList.add("hidden");
   document.querySelector("#chat-area").appendChild(answerRight4);
@@ -94,39 +94,41 @@ function userAnswerHello() {
   answerLeft.classList.add("flex-col");
   answerLeft.classList.add("justify-start");
   answerLeft.innerHTML = `  <div
-  class="container m-2 lg:m-2 w-20 h-14 bg-gray-50 rounded-xl flex justify-center items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+  class="container m-2 lg:m-2 w-20 h-14 bg-white rounded-xl flex justify-center items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="500"  data-aos-anchor="#chatbot" data-aos-delay="500">
-  <h1 class="text-primaryOld">Hi ! 👋🏻 </h1>
+  <h1 class="text-navy">Hi ! 👋🏻 </h1>
 </div>
-<div class="container m-2 lg:m-2 w-2/5 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1000"  data-aos-anchor="#chatbot" data-aos-delay="1000">
-  <h1 class="text-primaryOld">Thanks for saying hi !</h1>
+  <h1 class="text-navy">Terima Kasih telah mengklik !</h1>
 </div>  
-<div class="container m-2 lg:m-2 w-2/5 lg:w-1/2 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-2/5 lg:w-1/2 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1500"  data-aos-anchor="#chatbot" data-aos-delay="1500">  
-  <h1 class="text-primaryOld"> I hope you enjoy browsing my work</h1>
+  <h1 class="text-navy"> Kami harap kamu menikmati website kami.</h1>
 </div>
-<div class="container m-2 lg:m-2 w-2/5 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="2000"  data-aos-anchor="#chatbot" data-aos-delay="2000">
-  <h1 class="text-primaryOld mr-1"> Can i help you with anything else ?
+  <h1 class="text-navy mr-1"> Ada yang bisa di bantu ?
   </h1>
 </div>
 
 <div id="question">
   <div id="chat-hello"
-      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
       data-aos-duration="2500"  data-aos-anchor="#chatbot" data-aos-delay="2500">
-      <h1 class="text-secondary">Just saying Hello !</h1>
+      <h1 class="text-sand">Halo Aksmud !</h1>
   </div>
   <div id="chat-consult"
-                    class="container m-2 lg:m-2 w-3/5 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+                    class="container m-2 lg:m-2 w-3/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
                     data-aos-duration="2700"  data-aos-anchor="#chatbot" data-aos-delay="2700">
-                    <h1 class="text-secondary">Interested in Consultation</h1>
+                    <h1 class="text-sand">Apa saja program kerja KKN kalian di
+                                    desa ini?</h1>
                 </div>
   <div id="chat-hire"
-      class="container m-2 lg:m-2 w-3/4 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      class="container m-2 lg:m-2 w-3/4 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
       data-aos-duration="3000"  data-aos-anchor="#chatbot" data-aos-delay="3000">
-      <h1 class="text-secondary">I'd like to collaborate with you !</h1>
+      <h1 class="text-sand">Boleh nggak kalau kami ikutan
+                                    kegiatan KKN kalian?</h1>
   </div>
 </div>`;
 
@@ -166,32 +168,31 @@ function userAnswerHire() {
   answerLeft.classList.add("flex-col");
   answerLeft.classList.add("justify-start");
   answerLeft.innerHTML = `  
-<div class="container m-2 lg:m-2 w-2/5 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="500"  data-aos-anchor="#chatbot" data-aos-delay="500">
-  <h1 class="text-primaryOld">That's awesome !</h1>
+  <h1 class="text-navy">Wah, tentu boleh dong! Beberapa kegiatan kami memang terbuka buat partisipasi warga maupun teman-teman relawan. </h1>
 </div>
-<div class="container m-2 lg:m-2 w-1/2 lg:w-1/2 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-1/2 lg:w-1/2 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1000"  data-aos-anchor="#chatbot" data-aos-delay="1000">
-  <h1 class="text-primaryOld"> Let's elevate your digital experience into a masterpiece.</h1>
+  <h1 class="text-navy"> Langsung aja hubungi kami lewat menu Kontak atau klik tombol Ingin Kolaborasi di halaman ini. </h1>
 </div>
-<div class="container m-2 lg:m-2 w-1/2 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-1/2 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1500"  data-aos-anchor="#chatbot" data-aos-delay="1500">
-  <h1 class="text-primaryOld mr-1"> Drop me a message, let's chat further !
-  </h1>
+  <h1 class="text-navy mr-1"> Kita senang banget kalau bisa bareng-bareng bikin kegiatan positif di desa ini!</h1>
 </div>
 
 <div id="question">
-<div id="chat-hire"
-class="container m-2 lg:m-2 w-1/2 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
-data-aos-duration="2000"  data-aos-anchor="#chatbot" data-aos-delay="2000">
-<a href="mailto:ilhanzuldan11@gmail.com?subject=Exciting%20Opportunity%20to%20Collaborate"
-    class="flex text-secondary ml-2 text-base items-center">Send a message !
-</a>
-</div>
+  <div id="chat-hire"
+      class="container m-2 lg:m-2 w-1/2 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      data-aos-duration="2500"  data-aos-anchor="#chatbot" data-aos-delay="2500">
+      <a href="mailto:ilhanzuldan11@gmail.com?subject=Exciting%20Opportunity%20to%20Collaborate"
+          class="flex text-sand ml-2 text-base items-center">Kirim Pesan !
+      </a>
+  </div>
   <div id="chat-options"
-      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
-      data-aos-duration="2500"  data-aos-anchor="#chatbot" data-aos-delay="2500" >
-      <h1 class="text-secondary">Other options ?</h1>
+      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      data-aos-duration="3000"  data-aos-anchor="#chatbot" data-aos-delay="3000">
+      <h1 class="text-sand">Yang Lainnya ?</h1>
   </div>
 </div>`;
 
@@ -221,38 +222,39 @@ function userAnswerConsult() {
   answerLeft.classList.add("flex");
   answerLeft.classList.add("flex-col");
   answerLeft.classList.add("justify-start");
-  answerLeft.innerHTML = `        <div class="container m-2 lg:m-2 w-2/5 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+  answerLeft.innerHTML = `        <div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="500"  data-aos-anchor="#chatbot" data-aos-delay="500">
-  <h1 class="text-primaryOld">Thanks for reaching out !</h1>
+  <h1 class="text-navy">Program kerja kami di antaranya:</h1>
 </div>
-<div class="container m-2 lg:m-2 w-1/2 lg:w-1/2 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-1/2 lg:w-1/2 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1000"  data-aos-anchor="#chatbot" data-aos-delay="1000">
-  <h1 class="text-primaryOld"> Yes, I provide consultation sessions. </h1>
+  <h1 class="text-navy"> 🌟 Penyuluhan tentang pengelolaan sampah<br>
+🌟 Penyuluhan Bahaya Judol dan Pinjol</h1>
 </div>
-<div class="container m-2 lg:m-2 w-1/2 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-1/2 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1500"  data-aos-anchor="#chatbot" data-aos-delay="1500">
-  <h1 class="text-primaryOld mr-1"> to better understand your project
-      requirements.
+  <h1 class="text-navy mr-1"> 🌟 Penanaman TOGA (Tanaman Obat Keluarga)<br>
+🌟 Pendidikan Bahasa Inggris
   </h1>
 </div>
-<div class="container m-2 lg:m-2 w-2/5 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+<div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="2000"  data-aos-anchor="#chatbot" data-aos-delay="2000">
-  <h1 class="text-primaryOld mr-1">and ensure we align our goals.
+  <h1 class="text-navy mr-1">Selengkapnya bisa cek di menu Program Kerja ya!”
   </h1>
 </div>
 
 <div id="question">
   <div id="chat-hire"
-      class="container m-2 lg:m-2 w-1/2 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      class="container m-2 lg:m-2 w-1/2 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
       data-aos-duration="2500"  data-aos-anchor="#chatbot" data-aos-delay="2500">
       <a href="mailto:ilhanzuldan11@gmail.com?subject=Exciting%20Opportunity%20to%20Collaborate"
-          class="flex text-secondary ml-2 text-base items-center">Send a message !
+          class="flex text-sand ml-2 text-base items-center">Kirim Pesan !
       </a>
   </div>
   <div id="chat-options"
-      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
       data-aos-duration="3000"  data-aos-anchor="#chatbot" data-aos-delay="3000">
-      <h1 class="text-secondary">Other options ?</h1>
+      <h1 class="text-sand">Yang Lainnya ?</h1>
   </div>
 </div>`;
 
@@ -291,25 +293,25 @@ function userAnswerOpt() {
   answerLeft.classList.add("flex");
   answerLeft.classList.add("flex-col");
   answerLeft.classList.add("justify-start");
-  answerLeft.innerHTML = ` <div class="container m-2 lg:m-2 w-2/5 bg-gray-50 rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
+  answerLeft.innerHTML = ` <div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="500"  data-aos-anchor="#chatbot" data-aos-delay="500">
   <h1 class="text-primary">Alright then</h1>
 </div>
 <div id="question">
   <div id="chat-hello"
-      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
       data-aos-duration="1000"  data-aos-anchor="#chatbot" data-aos-delay="1000">
-      <h1 class="text-secondary">Just saying Hello !</h1>
+      <h1 class="text-sand">Just saying Hello !</h1>
   </div>
   <div id="chat-consult"
-  class="container m-2 lg:m-2 w-3/5 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+  class="container m-2 lg:m-2 w-3/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
   data-aos-duration="1500"  data-aos-anchor="#chatbot" data-aos-delay="1500">
-  <h1 class="text-secondary">Interested in Consultation</h1>
+  <h1 class="text-sand">Ingin konsultasi tentang program kami</h1>
 </div>
 <div id="chat-hire"
-class="container m-2 lg:m-2 w-3/4 bg-transparent border-2 border-secondary rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+class="container m-2 lg:m-2 w-3/4 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
 data-aos-duration="2000"  data-aos-anchor="#chatbot" data-aos-delay="2000">
-<h1 class="text-secondary" >I'd like to collaborate with you !</h1>
+<h1 class="text-sand" >Penasaran ingin kolaborasi bareng kami !</h1>
 </div>
 </div>`;
 

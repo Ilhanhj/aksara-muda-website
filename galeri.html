@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth bg-cream">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./src/output.css" rel="stylesheet" />
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo-aksaramuda.png" />
   <title>Galeri Aksara Muda</title>
   <style>
     @keyframes slide-up {
@@ -26,33 +27,177 @@
 </head>
 
 <body class="bg-cream font-[poppins]">
+  <!-- ========== HEADER ========== -->
+  <header class="z-50 flex flex-wrap w-full py-3 lg:justify-start lg:flex-nowrap bg-navy ">
+    <nav
+      class="relative flex flex-wrap items-center w-full px-4 mx-auto max-w-7xl lg:grid lg:grid-cols-12 basis-full md:px-6 lg:px-40">
+      <div class="flex items-center lg:col-span-3">
+        <!-- Logo -->
+        <a class="flex-none inline-block text-xl font-bold rounded-md text-sand " href="index.html"
+          aria-label="Preline">
+          AKSARA MUDA
+        </a>
+        <!-- End Logo -->
 
-  <!-- Header -->
-  <header class="z-50 flex w-full py-3 bg-navy shadow-md">
-    <nav class="flex flex-wrap items-center justify-between w-full px-4 mx-auto max-w-7xl md:px-6">
-      <a class="text-xl font-bold text-sand" href="index.html">AKSARA MUDA</a>
-      <div class="flex items-center gap-4">
-        <a href="index.html#tentang" class="text-cream hover:text-sand">Tentang</a>
-        <a href="index.html#program" class="text-cream hover:text-sand">Program</a>
-        <a href="galeri.html" class="text-cream hover:text-sand">Galeri</a>
-        <a href="team.html" class="text-cream hover:text-sand">Tim</a>
-        <a href="#kontak">
-          <button type="button" class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-sand hover:opacity-80">
+
+      </div>
+
+      <!-- Button Group -->
+      <div class="flex items-center py-1 gap-x-1 lg:gap-x-2 ms-auto lg:ps-6 lg:order-3 lg:col-span-3">
+        <a href="index.html#kontak" class="">
+          <button type="button"
+            class="inline-flex items-center px-4 py-3 text-sm font-medium text-white border border-transparent rounded-lg cursor-pointer gap-x-2 bg-sand hover:opacity-75 focus:outline-hidden focus:opacity-75 disabled:opacity-50 disabled:pointer-events-none">
             Kontak
           </button>
+
         </a>
+
+        <div class="lg:hidden">
+          <button type="button"
+            class="hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-md border text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-black dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            id="hs-navbar-hcail-collapse" aria-expanded="false" aria-controls="hs-navbar-hcail"
+            aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-hcail">
+            <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="3" x2="21" y1="6" y2="6" />
+              <line x1="3" x2="21" y1="12" y2="12" />
+              <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            <svg class="hidden hs-collapse-open:block shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
+      <!-- End Button Group -->
+
+      <!-- Collapse -->
+      <div id="hs-navbar-hcail"
+        class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-6"
+        aria-labelledby="hs-navbar-hcail-collapse">
+        <div
+          class="flex flex-col mt-5 gap-y-4 gap-x-0 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
+          <div>
+            <a class="relative inline-block text-cream hover:text-sand before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-z-400 dark:text-cream"
+              href="index.html#tentang" aria-current="page">Tentang</a>
+          </div>
+          <div>
+            <a class="inline-block text-cream hover:text-sand dark:text-cream " href="index.html#program">Program</a>
+          </div>
+          <div>
+            <a class="inline-block text-cream hover:text-sand dark:text-cream " href="galeri.html">Galeri</a>
+          </div>
+          <div>
+            <a class="inline-block text-cream hover:text-sand dark:text-cream " href="team.html">Tim</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Collapse -->
     </nav>
   </header>
+  <!-- ========== END HEADER ========== -->
+  <div id="chatbot"
+    class=" w-full h-screen bg-navy bg-opacity-20 backdrop-blur-md fixed bottom-0 right-0 z-[400] scale-0 origin-top transition duration-300 overflow-y-auto lg:w-1/3 lg:h-3/4 lg:overflow-y-auto scrollbar scrollbar-thumb-sand scrollbar-track-navy rounded-t-xl shadow-lg border-t-4 border-sand">
+
+    <!-- Header -->
+    <div class="sticky top-0 flex w-full h-20 bg-navy z-100 rounded-t-xl border-b-2 border-sand">
+      <div class="flex items-center justify-between w-full px-4">
+        <div class="flex items-center text-white gap-3">
+          <img src="./assets/logo-aksaramuda.png" alt="IlhanBot"
+            class="w-12 h-12 bg-white rounded-full border-2 border-sand">
+          <div>
+            <h1 class="font-bold text-lg">Aksara Muda </h1>
+            <p class="text-xs opacity-80">Tanyakan sebuah pertanyaan !</p>
+          </div>
+        </div>
+        <div id="close"
+          class="text-white flex items-center justify-center w-5 h-5 rounded-full cursor-pointer hover:bg-white hover:text-dark transition">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="bg-red-500 rounded-full">
+            <path
+              d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div id="chat-area" class="w-full p-4 space-y-3">
+
+      <div class="flex items-center justify-center w-fit p-3 bg-white text-navy rounded-xl">
+        <h1 class="">Halo, sobat! 👋🏻 Aku Punteun , teman ngobrol digital kamu di
+          website KKN ini.</h1>
+      </div>
+
+      <div class="flex items-center w-fit max-w-[85%] p-3 bg-white text-navy rounded-xl shadow">
+        <p> Di
+          sini
+          kamu bisa cari info tentang program kerja, lokasi KKN, sampai ikut seru-seruan bareng
+          kegiatan kami di desa. Tinggal klik pertanyaan yang kamu mau, aku siap bantu jawab! Yuk,
+          kita bikin desa ini makin hidup bareng-bareng! ✨🌾</p>
+      </div>
+
+      <div class="flex items-center w-fit max-w-[75%] p-3 bg-white text-navy rounded-xl shadow">
+        <p>Ada yang bisa dibantu ?</p>
+      </div>
+
+      <div class="flex items-center w-fit max-w-[70%] p-3 bg-white text-navy rounded-xl shadow">
+        <p class="mr-1">Dan jangan lupa<span class="text-sand font-semibold"> untuk scroll setelah
+            click !</span></p>
+      </div>
+
+      <!-- Quick Chat Options -->
+      <div id="question" class="space-y-3">
+
+        <div id="chat-hello"
+          class="flex items-center w-fit px-4 py-3 bg-transparent border-2 border-sand rounded-full cursor-pointer hover:border-white hover:text-dark transition">
+          <h1 class="text-sand hover:text-white font-medium">Halo Aksmud !</h1>
+        </div>
+
+        <div id="chat-consult"
+          class="flex items-center w-fit px-4 py-3 bg-transparent border-2 border-sand rounded-full cursor-pointer hover:border-white hover:text-dark transition">
+          <h1 class="text-sand hover:text-white font-medium"> Apa saja program kerja KKN kalian di
+            desa ini?</h1>
+        </div>
+
+        <div id="chat-hire"
+          class="flex items-center w-fit px-4 py-3 bg-transparent border-2 border-sand rounded-full cursor-pointer hover:border-white hover:text-dark transition">
+          <h1 class="text-sand hover:text-white font-medium">Boleh nggak kalau kami ikutan
+            kegiatan KKN kalian?
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Button -->
+  <div id="chatbot-button"
+    class="fixed bottom-0 right-4 w-14 h-14 lg:w-32 lg:h-14 bg-sand text-dark flex items-center justify-center rounded-tl-xl rounded-tr-xl shadow-lg cursor-pointer hover:bg-navy transition">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="text-white" width="24" height="24" viewBox="0 0 24 24"
+        fill="currentColor">
+        <path
+          d="M7.29117 20.8242L2 22L3.17581 16.7088C2.42544 15.3056 2 13.7025 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.2975 22 8.6944 21.5746 7.29117 20.8242ZM7.58075 18.711L8.23428 19.0605C9.38248 19.6745 10.6655 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.3345 4.32549 14.6175 4.93949 15.7657L5.28896 16.4192L4.63416 19.3658L7.58075 18.711Z">
+        </path>
+      </svg>
+      <h1 class="hidden lg:block text-white font-medium text-sm">Punteun </h1>
+    </div>
+  </div>
 
   <!-- Galeri -->
-  <section class="bg-white py-10 sm:py-12 lg:py-16">
+  <section class="bg-white py-10 sm:py-12 lg:py-16 lg:px-32">
     <div class="max-w-screen-xl px-4 mx-auto md:px-8">
       <div class="mb-10 text-center">
-        <h2 class="text-4xl font-extrabold text-navy mb-4 animate-fade-in-down">
+        <h2 class="text-3xl font-bold sm:text-4xl text-sand nimate-fade-in-down">
           Galeri Kegiatan Aksara Muda
         </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
+        <p class="text-neutral-400 max-w-2xl mx-auto">
           Dokumentasi perjalanan kami dalam membangun perubahan di masyarakat bersama Aksara Muda.
         </p>
       </div>
@@ -61,22 +206,23 @@
       <div class="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -85,16 +231,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -104,15 +251,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -121,34 +269,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -157,16 +307,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -176,15 +327,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -193,35 +345,37 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi dalam satu container -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <!-- Label yang selalu tampil -->
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <!-- Label yang selalu tampil -->
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi yang muncul saat hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi yang muncul saat hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -230,16 +384,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -249,15 +404,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -266,34 +422,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -302,16 +460,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -321,15 +480,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -338,35 +498,37 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi dalam satu container -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <!-- Label yang selalu tampil -->
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <!-- Label yang selalu tampil -->
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi yang muncul saat hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi yang muncul saat hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -375,16 +537,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -394,15 +557,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -411,34 +575,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -447,16 +613,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -466,15 +633,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -483,34 +651,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -519,16 +689,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -538,15 +709,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -555,34 +727,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -591,16 +765,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -610,15 +785,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -627,34 +803,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -663,16 +841,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -682,15 +861,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -699,34 +879,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -735,16 +917,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -754,15 +937,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -771,34 +955,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -807,16 +993,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -826,15 +1013,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -843,34 +1031,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -879,16 +1069,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -898,15 +1089,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -915,34 +1107,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -951,16 +1145,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -970,15 +1165,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -987,34 +1183,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -1023,16 +1221,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -1042,15 +1241,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -1059,34 +1259,36 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- Item 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -1095,16 +1297,17 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Item 3 -->
@@ -1114,15 +1317,16 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
-        </div>
         </div>
         <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
@@ -1131,107 +1335,114 @@
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
-        </div>
         </div>
         <!-- Item 1 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
-          alt="Pelatihan Digital"
-          class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            alt="Pelatihan Digital"
+            class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
 
-        <!-- Label dan Deskripsi -->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
+          <!-- Label dan Deskripsi -->
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
 
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Item 3 -->
+        <!-- Item 3 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
           <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=500"
             alt="Kelas Anak"
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi-->
-        <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
-          <div class="text-sm font-semibold drop-shadow-md mb-2">
-            Pembuatan Website
-          </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+            <div class="text-sm font-semibold drop-shadow-md mb-2">
+              Pembuatan Website
+            </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-        </div>
-      <!-- Item 4 -->
+        <!-- Item 4 -->
         <div class="relative overflow-hidden rounded-lg shadow-md break-inside-avoid group">
           <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=500"
             alt="Gotong Royong"
             class="w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
           <!-- Label dan Deskripsi -->
-          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 rounded-b-lg transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 z-10">
             <div class="text-sm font-semibold drop-shadow-md mb-2">
               Pembuatan Website
             </div>
-          <!-- Deskripsi hover -->
-          <div class="text-xs">
-            Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
-          </div>
+            <!-- Deskripsi hover -->
+            <div class="text-xs">
+              Tim kami membuat website resmi desa untuk mempermudah penyebaran informasi publik.
+            </div>
           </div>
         </div>
-        
-    </div>  
+      </div>
+    </div>
   </section>
+  <script src="js/script.js"></script>
 
 </body>
 
