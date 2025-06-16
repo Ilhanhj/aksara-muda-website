@@ -76,7 +76,7 @@ gsap.from("#img-tim", 4, {
   y: 0,
   clipPath: "inset(100% 0 0 0",
   ease: "power4.InOut",
-  stagger: 0.4,
+  stagger: 0.3,
 });
 
 // Chatbot Close
@@ -429,5 +429,3 @@ AOS.init({
   duration: 800,
   once: false,
 });
-
-
