@@ -123,7 +123,7 @@
                 <div id="chat-area" class="w-full p-4 space-y-3">
 
                     <div class="flex items-center justify-center w-fit p-3 bg-white text-navy rounded-xl">
-                        <h1 class="">Halo, sobat! 👋🏻 Aku Punteun , teman ngobrol digital kamu di
+                        <h1 class="">Halo, sobat! 👋🏻 Aku Aksmud , teman ngobrol digital kamu di
                             website KKN ini.</h1>
                     </div>
 
@@ -189,16 +189,18 @@
 
             <div
                 class="flex flex-col items-center justify-start max-w-screen-xl gap-6 px-3 py-20 m-auto grow md:gap-12 sm:px-8 lg:px-16 xl:px-32">
-                <img src="./assets/logo-aksaramuda.png" alt="" class="z-50 w-32" />
+                <img src="./assets/logo-aksaramuda.png" alt="" class="z-50 w-32" id="logo-center" />
                 <div class="flex flex-col items-center flex-1 gap-6 text-center">
-                    <span
-                        class="inline-flex px-3 py-1 text-sm font-semibold text-center transition-all duration-300 ease-in-out border rounded-full h-7 border-navy bg-sand text-cream">1
-                        - 30 JUNI 2025</span>
+                    <div id="logo-center"
+                        class="inline-flex px-3 py-1 text-sm font-semibold text-center transition-all duration-300 ease-in-out border rounded-full h-7 border-navy bg-sand text-cream">
+                        1
+                        - 30 JUNI 2025</div>
                     <div class="z-50 flex flex-col gap-6">
-                        <h3 class="text-4xl font-semibold text-slate-950 lg:text-5xl">Merangkai Aksara Menyulam
+                        <h3 class="text-4xl font-semibold text-slate-950 lg:text-5xl" id="hero-item">Merangkai Aksara
+                            Menyulam
                             Perubahan
                         </h3>
-                        <p class="font-normal leading-7 text-md text-neutral-400 lg:w-full lg:px-14">
+                        <p class="font-normal leading-7 text-md text-neutral-400 lg:w-full lg:px-14" id="hero-item">
                             Merangkai Aksara untuk menyusun
                             pesan
                             penuh makna,
@@ -206,13 +208,13 @@
                     </div>
                 </div>
                 <div class="flex gap-4">
-                    <a href="index.html#tentang" class="z-50">
+                    <a href="index.html#tentang" class="z-50" id="hero-item">
                         <button type="button" aria-disabled="false"
                             class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed bg-navy stroke-white px-6 text-white hover:bg-sky-950 h-[42px] min-w-[42px] gap-2 disabled:bg-slate-100 disabled:stroke-slate-400 disabled:text-neutral-400 disabled:hover:bg-slate-100">
                             <div>Jelajahi</div>
                         </button>
                     </a>
-                    <a href="#program" class="z-50">
+                    <a href="#program" class="z-50" id="hero-item">
                         <button type="button" aria-disabled="false"
                             class="cursor-pointer group inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-sand px-2 text-sand h-[42px] min-w-[42px] gap-2 disabled:stroke-slate-400 disabled:text-neutral-400 hover:stroke-sand hover:text-sand">
                             <div>Program</div>
@@ -924,6 +926,7 @@
 
     <!-- // end footer section -->
     <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
         const filenames = ['ameng.png', 'risma.png', 'awa.png', 'ridwan.png', 'adi.png', 'anisa.png', 'nabila.png', 'girly.png', 'fidela.png',
             'angel.png', 'shofi.png', 'rizka.png', 'yunia.png', 'tasya.png', 'jije.png', 'maryam.png', 'iqbal.png', 'ilhan.png', 'aulia.png',
@@ -942,7 +945,17 @@
 
             hero.appendChild(img);
             elements.push({ img, i });
+
+            // animasi muncul dengan delay berbeda
+            gsap.from(img, {
+                opacity: 0,
+                scale: 0.5,
+                duration: 3.1,
+                delay: i * 0.2, // <-- semakin besar angka, makin lambat jaraknya
+                ease: 'back.out(1.7)'
+            });
         });
+
 
         function updatePositions() {
             const centerX = window.innerWidth / 2;
