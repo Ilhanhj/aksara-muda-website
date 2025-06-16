@@ -59,7 +59,7 @@ function userAnswerRight2() {
   answerRight2.classList.add("justify-end");
   answerRight2.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-sand rounded-full flex items-center p-3" data-aos="fade-up"
   data-aos-duration="500">
-    <h1 class="text-white">I'd like to hire you !</h1>
+    <h1 class="text-white">Ikut KKN nya dong, boleh?</h1>
     </div>`;
   document.querySelector("#question").classList.add("hidden");
   document.querySelector("#chat-area").appendChild(answerRight2);
@@ -70,7 +70,7 @@ function userAnswerRight3() {
   answerRight3.classList.add("justify-end");
   answerRight3.innerHTML = `<div class="container m-4 mr-2 lg:mr-2 lg:m-2 w-2/5 lg:w-[40%] bg-sand rounded-full flex items-center p-3" data-aos="fade-up"
   data-aos-duration="500">
-    <h1 class="text-white ">Other options</h1>
+    <h1 class="text-white ">Yang lainnya?</h1>  
     </div>`;
   document.querySelector("#question").classList.add("hidden");
   document.querySelector("#chat-area").appendChild(answerRight3);
@@ -82,7 +82,7 @@ function userAnswerRight4() {
   answerRight4.innerHTML = `<div id="chat-consult"
   class="container m-2 lg:m-2 w-3/5 bg-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
   data-aos-duration="500">
-  <h1 class="text-white">Ingin konsultasi tentang program kami</h1>
+  <h1 class="text-white">Apa saja program kerja KKN kalian di desa ini?</h1>
 </div>`;
   document.querySelector("#question").classList.add("hidden");
   document.querySelector("#chat-area").appendChild(answerRight4);
@@ -121,14 +121,12 @@ function userAnswerHello() {
   <div id="chat-consult"
                     class="container m-2 lg:m-2 w-3/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
                     data-aos-duration="2700"  data-aos-anchor="#chatbot" data-aos-delay="2700">
-                    <h1 class="text-sand">Apa saja program kerja KKN kalian di
-                                    desa ini?</h1>
+                    <h1 class="text-sand">Apa saja program kerja KKN kalian di desa ini?</h1>
                 </div>
   <div id="chat-hire"
       class="container m-2 lg:m-2 w-3/4 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
       data-aos-duration="3000"  data-aos-anchor="#chatbot" data-aos-delay="3000">
-      <h1 class="text-sand">Boleh nggak kalau kami ikutan
-                                    kegiatan KKN kalian?</h1>
+      <h1 class="text-sand">Ikut KKN-nya dong, boleh?</h1>
   </div>
 </div>`;
 
@@ -228,13 +226,13 @@ function userAnswerConsult() {
 </div>
 <div class="container m-2 lg:m-2 w-1/2 lg:w-1/2 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1000"  data-aos-anchor="#chatbot" data-aos-delay="1000">
-  <h1 class="text-navy"> 🌟 Penyuluhan tentang pengelolaan sampah<br>
-🌟 Penyuluhan Bahaya Judol dan Pinjol</h1>
+  <h1 class="text-navy"> 🌟 Digitalisasi, Pemasaran dan Pembuatan Website<br>
+🌟 Lingkungan, Edukasi, dan Pengembangan Masyarakat</h1>
 </div>
 <div class="container m-2 lg:m-2 w-1/2 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="1500"  data-aos-anchor="#chatbot" data-aos-delay="1500">
-  <h1 class="text-navy mr-1"> 🌟 Penanaman TOGA (Tanaman Obat Keluarga)<br>
-🌟 Pendidikan Bahasa Inggris
+  <h1 class="text-navy mr-1"> 🌟 Penanaman TOGA (Tanaman Obat Keluarga) dan Edukasi Kesehatan<br>
+🌟 Edukasi Bahasa Inggris
   </h1>
 </div>
 <div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
@@ -295,24 +293,25 @@ function userAnswerOpt() {
   answerLeft.classList.add("justify-start");
   answerLeft.innerHTML = ` <div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="500"  data-aos-anchor="#chatbot" data-aos-delay="500">
-  <h1 class="text-primary">Alright then</h1>
+  <h1 class="text-primary">Okay Lets Go</h1>
 </div>
 <div id="question">
   <div id="chat-hello"
       class="container m-2 lg:m-2 w-2/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
-      data-aos-duration="1000"  data-aos-anchor="#chatbot" data-aos-delay="1000">
-      <h1 class="text-sand">Just saying Hello !</h1>
+      data-aos-duration="2500"  data-aos-anchor="#chatbot" data-aos-delay="2500">
+      <h1 class="text-sand">Halo Aksmud !</h1>
   </div>
   <div id="chat-consult"
-  class="container m-2 lg:m-2 w-3/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
-  data-aos-duration="1500"  data-aos-anchor="#chatbot" data-aos-delay="1500">
-  <h1 class="text-sand">Ingin konsultasi tentang program kami</h1>
-</div>
-<div id="chat-hire"
-class="container m-2 lg:m-2 w-3/4 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
-data-aos-duration="2000"  data-aos-anchor="#chatbot" data-aos-delay="2000">
-<h1 class="text-sand" >Penasaran ingin kolaborasi bareng kami !</h1>
-</div>
+                    class="container m-2 lg:m-2 w-3/5 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+                    data-aos-duration="2700"  data-aos-anchor="#chatbot" data-aos-delay="2700">
+                    <h1 class="text-sand">Apa aja nih program kerja kalian di
+                                    desa ini?</h1>
+                </div>
+  <div id="chat-hire"
+      class="container m-2 lg:m-2 w-3/4 bg-transparent border-2 border-sand rounded-full flex items-center p-3 cursor-pointer" data-aos="fade-up"
+      data-aos-duration="3000"  data-aos-anchor="#chatbot" data-aos-delay="3000">
+      <h1 class="text-sand">Ikut KKN-nya dong, boleh?</h1>
+  </div>
 </div>`;
 
   const chatHellos = answerLeft.querySelectorAll("#chat-hello");
