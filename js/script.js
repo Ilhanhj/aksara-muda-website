@@ -424,3 +424,10 @@ function userAnswerOpt() {
 
   document.querySelector("#chat-area").appendChild(answerLeft);
 }
+
+AOS.init({
+  duration: 800,
+  once: false,
+});
+
+
