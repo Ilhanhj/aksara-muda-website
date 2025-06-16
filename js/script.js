@@ -1,3 +1,84 @@
+const tl = gsap.timeline();
+
+// Timeline biar urut dan rapi
+const navTl = gsap.timeline();
+
+// Navbar wrapper masuk dari atas
+navTl
+  .from("header", {
+    opacity: 0,
+    y: -50,
+    duration: 1.4,
+    ease: "power4.out",
+  })
+
+  // Logo delay dikit muncul
+  .from(
+    "header a[href='index.html']",
+    {
+      opacity: 0,
+      y: -20,
+      duration: 1,
+      ease: "power3.out",
+    },
+    "-=1"
+  ) // mulai sebelum navbar selesai
+
+  // Link nav muncul stagger
+  .from(
+    "header #hs-navbar-hcail a",
+    {
+      opacity: 0,
+      y: -20,
+      duration: 0.9,
+      stagger: 0.2,
+      ease: "power2.out",
+    },
+    "-=0.9"
+  )
+
+  // Tombol Kontak muncul belakangan
+  .from(
+    "header button",
+    {
+      opacity: 0,
+      scale: 0.8,
+      duration: 1.1,
+      ease: "back.out(1.7)",
+    },
+    "-=1"
+  );
+
+// Logo tengah
+tl.from("#logo-center", {
+  opacity: 0,
+  scale: 0.3,
+  y: -80,
+  duration: 2,
+  ease: "power4.out",
+});
+
+gsap.from("#hero-item", {
+  opacity: 0,
+  y: 30,
+  duration: 1.5,
+  stagger: 0.4,
+  ease: "power3.out",
+});
+
+gsap.from("#img", 4, {
+  y: 100,
+  clipPath: "inset(100% 0 0 0",
+  ease: "power4.InOut",
+});
+
+gsap.from("#img-tim", 4, {
+  y: 0,
+  clipPath: "inset(100% 0 0 0",
+  ease: "power4.InOut",
+  stagger: 0.4,
+});
+
 // Chatbot Close
 const chatBot = document.querySelector("#chatbot");
 const openChatbot = document.querySelector("#chatbot-button");
