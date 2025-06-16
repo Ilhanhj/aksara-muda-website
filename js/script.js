@@ -342,3 +342,10 @@ data-aos-duration="2000"  data-aos-anchor="#chatbot" data-aos-delay="2000">
 
   document.querySelector("#chat-area").appendChild(answerLeft);
 }
+
+AOS.init({
+  duration: 800,
+  once: false,
+});
+
+
