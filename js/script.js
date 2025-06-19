@@ -374,7 +374,7 @@ function userAnswerOpt() {
   answerLeft.classList.add("justify-start");
   answerLeft.innerHTML = ` <div class="container m-2 lg:m-2 w-2/5 bg-white rounded-xl flex items-center p-3 dark:bg-darkSec" data-aos="fade-up"
   data-aos-duration="500"  data-aos-anchor="#chatbot" data-aos-delay="500">
-  <h1 class="text-primary">Okay Lets Go</h1>
+  <h1 class="text-navy">Okay Lets Go</h1>
 </div>
 <div id="question">
   <div id="chat-hello"

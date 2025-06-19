@@ -187,6 +187,34 @@
 
             </div>
 
+            <div id="hs-full-screen-modal"
+                class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none"
+                role="dialog" tabindex="-1" aria-labelledby="hs-full-screen-label">
+                <div
+                    class="hs-overlay-open:mt-0 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-10 opacity-0 transition-all max-w-full max-h-full h-full">
+                    <div class="flex flex-col bg-cream pointer-events-auto max-w-full max-h-full h-full ">
+                        <div
+                            class="flex justify-between items-center py-3 px-4 border-b border-gray-200 dark:border-neutral-700">
+                            <h3 id="hs-full-screen-label" class="font-bold text-gray-800 ">Modal title
+                            </h3>
+                            <button type="button"
+                                class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600"
+                                aria-label="Close" data-hs-overlay="#hs-full-screen-modal">
+                                <span class="sr-only">Close</span>
+                                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M18 6 6 18M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="p-4 overflow-y-auto">
+                            <p class="mt-1 text-gray-800 dark:text-neutral-400">Modal content here…</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div
                 class="flex flex-col items-center justify-start max-w-screen-xl gap-6 px-3 py-20 m-auto grow md:gap-12 sm:px-8 lg:px-16 xl:px-32">
                 <img src="./assets/logo-aksaramuda.png" alt="" class="z-50 w-32" id="logo-center" />
@@ -232,7 +260,7 @@
     <!-- START STATS -->
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-8 bg-navy">
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-center">
                 <div
                     class="flex items-center justify-center w-12 h-12 p-3 mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-navy bg-sand ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
@@ -247,7 +275,7 @@
                     Fokus pengabdian, wisata alam & UMKM lokal.
                 </p>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center">
                 <div
                     class="flex items-center justify-center w-12 h-12 p-3 mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-navy bg-sand ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
@@ -264,7 +292,7 @@
 
                 </p>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-center">
                 <div
                     class="flex items-center justify-center w-12 h-12 p-3 mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-navy bg-sand ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
@@ -279,7 +307,7 @@
                     Digitalisasi, edukasi, lingkungan & komunitas.
                 </p>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="text-center">
                 <div
                     class="flex items-center justify-center w-12 h-12 p-3 mx-auto mb-3 rounded-full bg-teal-accent-400 sm:w-12 sm:h-12 text-navy bg-sand ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="currentColor">
@@ -304,112 +332,148 @@
     <!-- // end hero section -->
 
     <!-- // start tentang program section -->
-
     <section id="tentang">
         <!-- Features -->
         <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
-  <!-- Title -->
-  <div class="grid items-center justify-start w-full grid-cols-1 gap-8 lg:grid-cols-[3fr_1fr] lg:gap">
-    
-    <!-- Kolom Teks -->
-    <div data-aos="zoom-in-up" data-aos-delay="100" class="inline-flex flex-col items-center justify-start w-full gap-10 lg:items-start">
-      <div class="flex flex-col items-center justify-start w-full gap-4 lg:items-start">
-        <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Tentang</h2>
-        <p class="text-base font-normal leading-relaxed text-gray-400 lg:text-start text-justify">
-          "Aksara Muda" menggambarkan sekelompok anak muda yang menjadi penyampai pesan dan
-          pembawa perubahan lewat tindakan nyata. Seperti aksara yang menyusun kata dan membentuk
-          cerita, kelompok ini menyusun karya dan kontribusi dalam masyarakat selama KKN. Nama ini
-          juga menyiratkan harapan bahwa setiap langkah kecil yang dilakukan bisa meninggalkan
-          jejak yang bermakna—layaknya aksara yang tertulis dalam sejarah.
-        </p>
-      </div>
-    </div>
+            <!-- Title -->
+            <div class="grid items-center justify-start w-full grid-cols-1 gap-8 lg:grid-cols-[3fr_1fr] lg:gap">
+                <div class="inline-flex flex-col items-center justify-start w-full gap-10 lg:items-start">
+                    <div class="flex flex-col items-center justify-start w-full gap-4 lg:items-start">
 
-    <!-- Kolom Gambar -->
-    <img data-aos="zoom-in" data-aos-delay="200" class="object-cover h-full mx-auto lg:mx-0 rounded-3xl"
-      src="/assets/logo-aksaramuda.png" alt="about Us image" />
-    
-  </div>
-
+                        <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Tentang</h2>
+                        <p class="text-base font-normal leading-relaxed  text-gray-400 lg:text-start text-justify">
+                            "Aksara Muda" menggambarkan sekelompok anak muda yang menjadi penyampai pesan dan
+                            pembawa perubahan lewat tindakan nyata. Seperti aksara yang menyusun kata dan membentuk
+                            cerita, kelompok ini menyusun karya dan kontribusi dalam masyarakat selama KKN. Nama ini
+                            juga menyiratkan harapan bahwa setiap langkah kecil yang dilakukan bisa meninggalkan
+                            jejak yang bermakna—layaknya aksara yang tertulis dalam sejarah.</p>
+                    </div>
+                </div>
+                <img class="object-cover h-full mx-auto lg:mx-0 rounded-3xl" src="/assets/logo-aksaramuda.png"
+                    alt="about Us image" />
+            </div>
             <!-- End Features -->
             <!-- Icon Blocks -->
             <!-- Grid -->
             <div class="grid gap-12 mt-5">
-  <!-- Our Vision -->
-  <div data-aos="fade-up" data-aos-delay="100">
-    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Visi</h2>
-    <p class="mt-3 text-gray-400 dark:text-neutral-400">
-      Menjadi simbol generasi muda yang aktif, reflektif, dan berdampak melalui kontribusi nyata yang
-      menyusun perubahan dalam masyarakat seperti aksara yang membentuk cerita bermakna dalam sejarah.
-    </p>
-  </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Our Vision
+                    </h2>
+                    <p class="mt-3 text-gray-400 dark:text-neutral-400">
+                        Menjadi simbol generasi muda yang aktif, reflektif, dan berdampak melalui kontribusi nyata yang
+                        menyusun perubahan dalam masyarakat seperti aksara yang membentuk cerita bermakna dalam sejarah.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Our Mission
+                    </h2>
+                </div>
 
-  <!-- Our Mission -->
-  <div data-aos="fade-up" data-aos-delay="200">
-    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Misi</h2>
-  </div>
+                <div class="space-y-5 lg:space-y-5">
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                            <path d="M10 6h4" />
+                            <path d="M10 10h4" />
+                            <path d="M10 14h4" />
+                            <path d="M10 18h4" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                Menginspirasi anak muda untuk menyuarakan nilai kebaikan sosial melalui tindakan
+                                langsung
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                Kami mendorong para pemuda untuk tidak hanya berbicara, tetapi juga bergerak. Melalui
+                                lokakarya, kampanye sosial, dan aksi nyata di lapangan, kami memfasilitasi mereka untuk
+                                menjadi agen perubahan yang menyuarakan pentingnya empati dan gotong royong.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
 
-  <!-- Icon Blocks -->
-  <div class="space-y-5 lg:space-y-5">
-    
-    <!-- Icon Block 1 -->
-    <div data-aos="fade-right" data-aos-delay="100" class="flex gap-x-5 sm:gap-x-8">
-      <!-- svg tetap -->
-      <svg class="mt-2 shrink-0 size-6 text-navy" ...></svg>
-      <div class="grow">
-        <h3 class="text-base font-semibold sm:text-lg text-sand">
-          Menginspirasi anak muda untuk menyuarakan nilai kebaikan sosial melalui tindakan langsung
-        </h3>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">
-          Kami mendorong para pemuda...
-        </p>
-      </div>
-    </div>
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                Menyusun kontribusi nyata selama masa pengabdian KKN dengan semangat kolaborasi dan
+                                kepedulian
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                Selama periode KKN, kami merancang dan melaksanakan program yang berdampak langsung
+                                dengan berfokus pada lima pilar utama: kesehatan, pertanian, lingkungan, pendidikan, dan
+                                teknologi informasi. Inisiatif kami diwujudkan melalui kegiatan nyata seperti edukasi
+                                kesehatan, pengembangan produk pertanian, aksi bersih desa, pengajaran Bahasa Inggris di
+                                sekolah, hingga pelatihan pemasaran digital. Semua ini kami wujudkan bersama masyarakat
+                                dengan mengedepankan kerja sama tim yang solid dan partisipasi aktif.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
 
-    <!-- Icon Block 2 -->
-    <div data-aos="fade-right" data-aos-delay="200" class="flex gap-x-5 sm:gap-x-8">
-      <svg class="mt-2 shrink-0 size-6 text-navy" ...></svg>
-      <div class="grow">
-        <h3 class="text-base font-semibold sm:text-lg text-sand">
-          Menyusun kontribusi nyata selama masa pengabdian KKN dengan semangat kolaborasi dan kepedulian
-        </h3>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">
-          Selama periode KKN...
-        </p>
-      </div>
-    </div>
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 10v12" />
+                            <path
+                                d="M9.97308 18H11V13H13V18H14.0269C14.1589 16.7984 14.7721 15.8065 15.7676 14.7226C15.8797 14.6006 16.5988 13.8564 16.6841 13.7501C17.5318 12.6931 18 11.385 18 10C18 6.68629 15.3137 4 12 4C8.68629 4 6 6.68629 6 10C6 11.3843 6.46774 12.6917 7.31462 13.7484C7.40004 13.855 8.12081 14.6012 8.23154 14.7218C9.22766 15.8064 9.84103 16.7984 9.97308 18ZM10 20V21H14V20H10ZM5.75395 14.9992C4.65645 13.6297 4 11.8915 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 11.8925 19.3428 13.6315 18.2443 15.0014C17.624 15.7748 16 17 16 18.5V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V18.5C8 17 6.37458 15.7736 5.75395 14.9992Z" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                Menanamkan jejak bermakna di masyarakat melalui pendekatan kreatif, komunikatif, dan
+                                berkelanjutan
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                Program kami dirancang agar tidak berhenti saat masa KKN usai. Kami menggunakan media
+                                kreatif untuk berkomunikasi serta melibatkan tokoh pemuda setempat untuk memastikan
+                                setiap inisiatif dapat terus berjalan dan berkembang secara mandiri di masa depan.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
 
-    <!-- Icon Block 3 -->
-    <div data-aos="fade-right" data-aos-delay="300" class="flex gap-x-5 sm:gap-x-8">
-      <svg class="mt-2 shrink-0 size-6 text-navy" ...></svg>
-      <div class="grow">
-        <h3 class="text-base font-semibold sm:text-lg text-sand">
-          Menanamkan jejak bermakna di masyarakat melalui pendekatan kreatif, komunikatif, dan berkelanjutan
-        </h3>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">
-          Program kami dirancang...
-        </p>
-      </div>
-    </div>
-
-    <!-- Icon Block 4 -->
-    <div data-aos="fade-right" data-aos-delay="400" class="flex gap-x-5 sm:gap-x-8">
-      <svg class="mt-2 shrink-0 size-6 text-navy" ...></svg>
-      <div class="grow">
-        <h3 class="text-base font-semibold sm:text-lg text-sand">
-          Membangun identitas kolektif yang mampu menjadi representasi anak muda yang peka, tangguh dan bertanggung jawab
-        </h3>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">
-          Melalui setiap kegiatan...
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
- <!-- End Grid -->
-</div>
-</section>
+                    <!-- Icon Block -->
+                    <div class="flex gap-x-5 sm:gap-x-8">
+                        <svg class="mt-2  shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 10v12" />
+                            <path
+                                d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
+                        </svg>
+                        <div class="grow">
+                            <h3 class="text-base font-semibold  sm:text-lg text-sand">
+                                Membangun identitas kolektif yang mampu menjadi representasi anak muda yang peka,
+                                tangguh dan bertanggung jawab
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                                Melalui setiap kegiatan, kami membentuk sebuah identitas bersama sebagai generasi muda
+                                yang tidak hanya cerdas, tetapi juga memiliki kepekaan sosial, mental yang kuat, dan
+                                keberanian untuk mengambil tanggung jawab atas perubahan positif di lingkungannya.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+                </div>
+            </div>
+            <!-- End Grid -->
+        </div>
+    </section>
     <!-- // end tentang program section -->
 
     <!-- // start tim section -->
@@ -419,68 +483,90 @@
     <!-- // start program & kegiatan section -->
     <section id="program">
         <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
-  <!-- Title of Program -->
-  <div class="max-w-3xl mb-10 lg:mb-14" data-aos="fade-up" data-aos-delay="100">
-    <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Program</h2>
-    <p class="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
-  </div>
-  <!-- End Title of Program -->
-
-  <!-- Program start -->
-  <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-8 lg:gap-y-0 md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
-
-    <!-- IF/SI -->
-    <div data-aos="zoom-in" data-aos-delay="100"
-      class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center min-h-[300px]">
-      <div class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-indigo-50 group-hover:bg-indigo-600">
-        <svg class="transition-all duration-500 text-indigo-600 group-hover:text-white" width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z" />
-        </svg>
-      </div>
-      <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">IF/SI</h4>
-      <p class="text-sm font-normal text-gray-500">Digitalisasi, Pemasaran dan Pembuatan Website</p>
-    </div>
-
-    <!-- Farmasi -->
-    <div data-aos="zoom-in" data-aos-delay="200"
-      class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center min-h-[300px]">
-      <div class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-pink-50 group-hover:bg-pink-600">
-        <svg class="transition-all duration-500 text-pink-600 group-hover:text-white" width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
-          <path d="M19.7786 4.22184C22.1217 6.56498 22.1217 10.364 19.7786 12.7071L17.6565 14.8277L12.7075 19.7782C10.3643 22.1213 6.56535 22.1213 4.2222 19.7782C1.87906 17.435 1.87906 13.6361 4.2222 11.2929L11.2933 4.22184C13.6364 1.87869 17.4354 1.87869 19.7786 4.22184Z" />
-        </svg>
-      </div>
-      <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">Farmasi</h4>
-      <p class="text-sm font-normal text-gray-500">Edukasi Kesehatan, Penanaman Tamanan Obat Keluarga dan Sosialisasi Kesehatan</p>
-    </div>
-
-    <!-- Hubungan Internasional -->
-    <div data-aos="zoom-in" data-aos-delay="300"
-      class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center min-h-[300px]">
-      <div class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-teal-50 group-hover:bg-teal-600">
-        <svg class="transition-all duration-500 text-teal-600 group-hover:text-white" width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
-          <path d="M11.8611 2.39057C12.8495 1.73163 14.1336 1.71797 15.1358 2.35573L19.291 4.99994H20.9998C21.5521 4.99994 21.9998 5.44766 21.9998 5.99994V14.9999C21.9998 15.5522 21.5521 15.9999 20.9998 15.9999H19.4801C19.5396 16.9472 19.0933 17.9102 18.1955 18.4489L13.1021 21.505C12.4591 21.8907 11.6609 21.8817 11.0314 21.4974C10.3311 22.1167 9.2531 22.1849 8.47104 21.5704L3.33028 17.5312C2.56387 16.9291 2.37006 15.9003 2.76579 15.0847C2.28248 14.7057 2 14.1254 2 13.5109V6C2 5.44772 2.44772 5 3 5H7.94693L11.8611 2.39057Z" />
-        </svg>
-      </div>
-      <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">Hubungan Internasional</h4>
-      <p class="text-sm font-normal text-gray-500">Edukasi Bahasa Inggris</p>
-    </div>
-
-    <!-- Administrasi Negara -->
-    <div data-aos="zoom-in" data-aos-delay="400"
-      class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center min-h-[300px]">
-      <div class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-orange-50 group-hover:bg-orange-600">
-        <svg class="transition-all duration-500 text-orange-600 group-hover:text-white" width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
-          <path d="M20 6H23V8H22V19H23V21H1V19H2V8H1V6H4V4C4 3.44772 4.44772 3 5 3H19C19.5523 3 20 3.44772 20 4V6ZM20 8H4V19H7V12H9V19H11V12H13V19H15V12H17V19H20V8ZM6 5V6H18V5H6Z" />
-        </svg>
-      </div>
-      <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">Administrasi Negara</h4>
-      <p class="text-sm font-normal text-gray-500">Lingkungan, Edukasi, dan Pengembangan Masyarakat</p>
-    </div>
-
-  </div>
-  <!-- Program end -->
-</div>
-
+            <!-- Title of Program -->
+            <div class="max-w-3xl mb-10 lg:mb-14">
+                <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Program</h2>
+                <p class="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
+            </div>
+            <!-- End Title of Program -->
+            <!-- Program start -->
+            <div
+                class="flex flex-wrap items-center justify-center gap-x-5 gap-y-8 lg:gap-y-0 md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+                <div
+                    class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center  min-h-[300px]">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-indigo-50 group-hover:bg-indigo-600">
+                        <svg class="transition-all duration-500 text-indigo-600 group-hover:text-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"
+                                stroke="" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        IF/SI
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Digitalisasi, Pemasaran dan Pembuatan Website
+                    </p>
+                </div>
+                <div
+                    class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center min-h-[300px]">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-pink-50 group-hover:bg-pink-600">
+                        <svg class="transition-all duration-500 text-pink-600 group-hover:text-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.7786 4.22184C22.1217 6.56498 22.1217 10.364 19.7786 12.7071L17.6565 14.8277L12.7075 19.7782C10.3643 22.1213 6.56535 22.1213 4.2222 19.7782C1.87906 17.435 1.87906 13.6361 4.2222 11.2929L11.2933 4.22184C13.6364 1.87869 17.4354 1.87869 19.7786 4.22184ZM14.8288 14.8284L9.17195 9.17158L5.63642 12.7071C4.07432 14.2692 4.07432 16.8019 5.63642 18.364C7.19851 19.9261 9.73117 19.9261 11.2933 18.364L14.8288 14.8284Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        Farmasi
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Edukasi Kesehatan, Penanaman Tamanan Obat Keluarga dan Sosialisasi Kesehatan
+                    </p>
+                </div>
+                <div
+                    class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center min-h-[300px]">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-teal-50 group-hover:bg-teal-600">
+                        <svg class="transition-all duration-500 text-teal-600 group-hover:text-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.8611 2.39057C12.8495 1.73163 14.1336 1.71797 15.1358 2.35573L19.291 4.99994H20.9998C21.5521 4.99994 21.9998 5.44766 21.9998 5.99994V14.9999C21.9998 15.5522 21.5521 15.9999 20.9998 15.9999H19.4801C19.5396 16.9472 19.0933 17.9102 18.1955 18.4489L13.1021 21.505C12.4591 21.8907 11.6609 21.8817 11.0314 21.4974C10.3311 22.1167 9.2531 22.1849 8.47104 21.5704L3.33028 17.5312C2.56387 16.9291 2.37006 15.9003 2.76579 15.0847C2.28248 14.7057 2 14.1254 2 13.5109V6C2 5.44772 2.44772 5 3 5H7.94693L11.8611 2.39057ZM4.17264 13.6452L4.86467 13.0397C6.09488 11.9632 7.96042 12.0698 9.06001 13.2794L11.7622 16.2518C12.6317 17.2083 12.7903 18.6135 12.1579 19.739L17.1665 16.7339C17.4479 16.5651 17.5497 16.2276 17.4448 15.9433L13.0177 9.74551C12.769 9.39736 12.3264 9.24598 11.9166 9.36892L9.43135 10.1145C8.37425 10.4316 7.22838 10.1427 6.44799 9.36235L6.15522 9.06958C5.58721 8.50157 5.44032 7.69318 5.67935 7H4V13.5109L4.17264 13.6452ZM14.0621 4.04306C13.728 3.83047 13.3 3.83502 12.9705 4.05467L7.56943 7.65537L7.8622 7.94814C8.12233 8.20827 8.50429 8.30456 8.85666 8.19885L11.3419 7.45327C12.5713 7.08445 13.8992 7.53859 14.6452 8.58303L18.5144 13.9999H19.9998V6.99994H19.291C18.9106 6.99994 18.5381 6.89148 18.2172 6.68727L14.0621 4.04306ZM6.18168 14.5448L4.56593 15.9586L9.70669 19.9978L10.4106 18.7659C10.6256 18.3897 10.5738 17.9178 10.2823 17.5971L7.58013 14.6247C7.2136 14.2215 6.59175 14.186 6.18168 14.5448Z"
+                                stroke="" stroke-width="1" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        Hubungan Internasional
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Edukasi Bahasa Inggris
+                    </p>
+                </div>
+                <div
+                    class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4 flex flex-col items-center min-h-[300px]">
+                    <div
+                        class="flex items-center justify-center w-20 h-20 mx-auto mb-5 transition-all duration-500 rounded-lg cursor-pointer bg-orange-50 group-hover:bg-orange-600">
+                        <svg class="transition-all duration-500 text-orange-600 group-hover:text-white" width="30"
+                            height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 6H23V8H22V19H23V21H1V19H2V8H1V6H4V4C4 3.44772 4.44772 3 5 3H19C19.5523 3 20 3.44772 20 4V6ZM20 8H4V19H7V12H9V19H11V12H13V19H15V12H17V19H20V8ZM6 5V6H18V5H6Z"
+                                stroke="" stroke-width="1" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <h4 class="mb-3 text-lg font-medium text-gray-900 capitalize">
+                        Administrasi Negara
+                    </h4>
+                    <p class="text-sm font-normal text-gray-500">
+                        Lingkungan, Edukasi, dan Pengembangan Masyarakat
+                    </p>
+                </div>
+            </div>
+            <!-- Program end -->
+        </div>
     </section>
     <!-- // end program & kegiatan section -->
 
@@ -488,13 +574,13 @@
     <section id="timeline">
         <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
             <!-- Title of Timeline -->
-            <div class="max-w-3xl mb-10 lg:mb-14" data-aos="zoom-in-up" data-aos-delay="100">
+            <div class="max-w-3xl mb-10 lg:mb-14">
                 <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Timeline</h2>
             </div>
             <!-- End Title of Timeline-->
             <!-- Timeline start -->
             <ol class="items-center sm:flex">
-                <li class="relative mb-6 sm:mb-0" data-aos="fade-right" data-aos-delay="100">
+                <li class="relative mb-6 sm:mb-0">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -515,7 +601,7 @@
                             components and interactive elements.</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0" data-aos="fade-right" data-aos-delay="200">
+                <li class="relative mb-6 sm:mb-0">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-6 h-6 rounded-full ring-0 ring-white bg-navy sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -536,7 +622,7 @@
                             components and interactive elements.</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0" data-aos="fade-right" data-aos-delay="300">
+                <li class="relative mb-6 sm:mb-0">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -560,7 +646,7 @@
             </ol>
 
             <ol class="items-center mt-5 sm:flex">
-                <li class="relative mb-6 sm:mb-0" data-aos="fade-right" data-aos-delay="400">
+                <li class="relative mb-6 sm:mb-0">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -581,7 +667,7 @@
                             components and interactive elements.</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0" data-aos="fade-right" data-aos-delay="500">
+                <li class="relative mb-6 sm:mb-0">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-6 h-6 rounded-full ring-0 ring-white bg-navy sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -602,7 +688,7 @@
                             components and interactive elements.</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0" data-aos="fade-right" data-aos-delay="600">
+                <li class="relative mb-6 sm:mb-0">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -641,7 +727,7 @@
         <div id="contact" class="bg-cream">
             <div class="max-w-5xl px-4 py-10 mx-auto xl:px-0 lg:py-20">
                 <!-- Title -->
-                <div class="max-w-3xl mb-10 lg:mb-14" data-aos="fade-up">
+                <div class="max-w-3xl mb-10 lg:mb-14">
                     <h2 class="text-2xl font-semibold text-navy md:text-4xl md:leading-tight">Halo, Kami di Sini!</h2>
                     <p class="mt-1 text-neutral-400">Punya pertanyaan, ide seru, atau sekadar ingin say hi? Kami selalu
                         senang dengar kabar dari kamu. Jangan ragu buat hubungi kami lewat email atau mampir langsung ke
@@ -650,12 +736,12 @@
                 <!-- End Title -->
 
                 <!-- Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16" >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16">
                     <div class="pb-10 mb-10 border-b md:order-2 border-neutral-800 md:border-b-0 md:pb-0 md:mb-0">
                         <form>
-                            <div class="space-y-4" >
+                            <div class="space-y-4">
                                 <!-- Input -->
-                                <div class="relative" data-aos="fade-right">
+                                <div class="relative">
                                     <input type="text" id="hs-tac-input-name"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
                                         placeholder="Nama">
@@ -670,7 +756,7 @@
                                 <!-- End Input -->
 
                                 <!-- Input -->
-                                <div class="relative" data-aos="fade-left">
+                                <div class="relative">
                                     <input type="email" id="hs-tac-input-email"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
                                         placeholder="Email">
@@ -685,7 +771,7 @@
                                 <!-- End Input -->
 
                                 <!-- Input -->
-                                <div class="relative" data-aos="fade-right">
+                                <div class="relative">
                                     <input type="text" id="hs-tac-input-company"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
                                         placeholder="Alamat ">
@@ -700,7 +786,7 @@
                                 <!-- End Input -->
 
                                 <!-- Input -->
-                                <div class="relative" data-aos="fade-left">
+                                <div class="relative">
                                     <input type="text" id="hs-tac-input-no. Telp"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
                                         placeholder="No. Telp">
@@ -715,7 +801,7 @@
                                 <!-- End Input -->
 
                                 <!-- Textarea -->
-                                <div class="relative" data-aos="fade-right">
+                                <div class="relative">
                                     <textarea id="hs-tac-message"
                                         class="block w-full p-3 text-white border-transparent rounded-lg peer sm:p-4 bg-sand sm:text-sm placeholder:text-transparent focus:outline-hidden focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2 autofill:pt-6 autofill:pb-2"
                                         placeholder="This is a textarea placeholder"
@@ -731,12 +817,12 @@
                                 <!-- End Textarea -->
                             </div>
 
-                            <div class="mt-2" >
-                                <p class="text-xs text-neutral-500" data-aos="zoom-in">
+                            <div class="mt-2">
+                                <p class="text-xs text-neutral-500">
                                     All fields are required
                                 </p>
 
-                                <p class="mt-5" data-aos="fade-left">
+                                <p class="mt-5">
                                     <a class="inline-flex items-center px-3 py-2 text-sm font-medium text-white rounded-full group gap-x-2 bg-navy focus:outline-hidden"
                                         href="#">
                                         Submit
@@ -756,7 +842,7 @@
 
                     <div class="space-y-14">
                         <!-- Item -->
-                        <div class="flex gap-x-5" data-aos="zoom-in-up">
+                        <div class="flex gap-x-5">
                             <svg class="shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -774,7 +860,7 @@
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="flex gap-x-5" data-aos="zoom-in-up">
+                        <div class="flex gap-x-5">
                             <svg class="shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -794,7 +880,7 @@
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="flex gap-x-5" data-aos="zoom-in-up">
+                        <div class="flex gap-x-5">
                             <svg class="shrink-0 size-6 text-navy" xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -866,6 +952,8 @@
         </div>
     </footer>
 
+
+
     <!-- // end footer section -->
     <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -885,18 +973,100 @@
             img.alt = name.replace('.png', '');
             img.className = `absolute animate-bounce-${(i % 3) + 1}`;
 
+            // Kalau klik angel.png, buka modal Preline isi Mak Titi Family
+            // === EASTER EGG: MODAL MAK TITI via klik logo 5x ===
+            let tapCount = 0;
+            const logo = document.getElementById('logo-center');
+
+            logo.addEventListener('click', () => {
+                tapCount++;
+                if (tapCount >= 3) {
+                    // Buka modal Preline
+                    window.HSOverlay.open('#hs-full-screen-modal');
+
+                    // Ganti judul modal
+                    document.getElementById('hs-full-screen-label').textContent = '👵🏻💖 Keluarga Mak Titi';
+
+                    // Ganti isi konten modal
+                    document.querySelector('#hs-full-screen-modal .p-4').innerHTML = `
+    <div class="max-w-5xl mx-auto bg-sand rounded-2xl shadow-xl overflow-hidden border border-navy">
+      <div class="md:flex gap-8 p-6 md:p-10">
+
+        <div class="md:flex-shrink-0">
+          <img 
+            class="w-full h-auto object-cover md:w-64 lg:w-[23rem] rounded-2xl border-4 border-navy"
+            src="./assets/mak-titi-fams.jpg" 
+            alt="Keluarga Mak Titi"
+          >
+        </div>
+
+        <div class="mt-6 md:mt-0 text-left flex-1">
+          <h1 class="text-3xl font-extrabold text-navy flex items-center gap-3">
+            👵🏻💖 Keluarga Mak Titi
+          </h1>
+          <p class="mt-2 text-base text-navy/80">Silsilah keluarga besar Mak Titi yang penuh cinta dan cerita!</p>
+
+          <div class="mt-3 space-y-3">
+
+            <div>
+              <h2 class="text-xl font-semibold text-navy flex items-center gap-2">
+                <span class="text-2xl">👨‍👩‍👧‍👦</span> Anak-Anak
+              </h2>
+              <ul class="mt-3 list-disc list-inside text-navy/80 space-y-1">
+                <li>Rizka</li>
+                <li>Amir</li>
+                <li>Nabila</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="text-xl font-semibold text-navy flex items-center gap-2">
+                <span class="text-2xl">💍</span> Pasangan & Menantu
+              </h2>
+              <ul class="mt-3 list-disc list-inside text-navy/80 space-y-1">
+                <li>Ilhan & Rizka</li>
+                <li>Amir & Ameng (Istri Pertama)</li>
+                <li>Amir & Aul (Istri Kedua)</li>
+                <li>Ridwan & Nabila</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="text-xl font-semibold text-navy flex items-center gap-2">
+                <span class="text-2xl">👶🏼</span> Cucu-Cucu
+              </h2>
+              <ul class="mt-3 list-none space-y-3 text-navy/80">
+                <li><strong class="font-medium text-navy">Dari Ilhan & Rizka:</strong> Iqbal, Jije, Awa</li>
+                <li><strong class="font-medium text-navy">Dari Amir & Aul:</strong> Shofi, Adi</li>
+                <li><strong class="font-medium text-navy">Dari Amir & Ameng:</strong> Yunia, Anisa, Tasya</li>
+                <li><strong class="font-medium text-navy">Dari Ridwan & Nabila:</strong> Fidela, Azizah</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+                    // Reset tap count setelah modal terbuka
+                    tapCount = 0;
+                }
+            });
+
+
             hero.appendChild(img);
             elements.push({ img, i });
 
-            // animasi muncul dengan delay berbeda
             gsap.from(img, {
                 opacity: 0,
                 scale: 0.5,
                 duration: 3.1,
-                delay: i * 0.2, // <-- semakin besar angka, makin lambat jaraknya
+                delay: i * 0.2,
                 ease: 'back.out(1.7)'
             });
         });
+
 
 
         function updatePositions() {
