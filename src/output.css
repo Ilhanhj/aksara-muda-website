@@ -776,12 +776,6 @@
     border-top-left-radius: var(--radius-xl);
     border-top-right-radius: var(--radius-xl);
   }
-  .rounded-tl-xl {
-    border-top-left-radius: var(--radius-xl);
-  }
-  .rounded-tr-xl {
-    border-top-right-radius: var(--radius-xl);
-  }
   .rounded-b-lg {
     border-bottom-right-radius: var(--radius-lg);
     border-bottom-left-radius: var(--radius-lg);
@@ -1482,13 +1476,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-200);
-      }
-    }
-  }
-  .hover\:bg-navy {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-navy);
       }
     }
   }
